@@ -1,5 +1,7 @@
 # render-bedroom.png
 
+**Usage rule (settled 7.12 — `01 settled/settled.md` → Imagery):** future/rebuild/next-steps contexts only, labeled as such — never as the current state of the property. Current rooms use `current-rooms-improved/` or current photography.
+
 ## Description
 
 This wide shot rendering of a new post-renovation guest room at Hotel Paisano showcases a blend of historic charm and modern luxury. The room features a large bed with an ornate dark wood headboard, crisp white linens embroidered with the hotel's name, and a deep burgundy throw. Warm, ambient lighting from wall-mounted sconces and a floor lamp complements the natural light streaming through a window with wooden shutters, which offers a view of a classical dome in the distance. The composition includes a cozy reading nook with a plush armchair and a bench at the foot of the bed, emphasizing a comfortable and sophisticated guest experience.

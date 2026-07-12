@@ -1,6 +1,6 @@
 # 28 the texture — expressions doc
 
-**Version:** V1 · 7.12.26 · created from the board pass (Buck's board comment, worked by AI — Buck QAs)
+**Version:** V2 · 7.12.26 · V1 + Buck's live direction from the first Paper render (session, 7.12): "texture doesn't look like enough texture" — the whisper-level grain read as near-flat in context. Direction, not a lock: the grain wants to be clearly present. Exact level still open.
 **Type:** graphic asset effort (right of the red line) — the canvas texture. First priority on 05 graphics/to-make.md ("blocks honest judging of several expressions — make first").
 
 ## What it is
@@ -19,7 +19,7 @@ A real material ground for the brand's surfaces instead of flat color: "Let's ma
 
 ## Leave open (variation space)
 
-- Grain scale and density — how visible the weave runs; cycle from whisper to present.
+- Grain scale and density — how visible the weave runs; cycle from whisper to present. (7.12 live, Buck: the first whisper-level render wasn't "enough texture" — the low end of this axis is likely dead in context, though no exact level is locked.)
 - Which brand color(s) it renders in beyond maroon.
 - Wear (fresh vs handled) — the references lean handled; not locked by the feedback.
 
