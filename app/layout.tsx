@@ -7,7 +7,7 @@ import {
   Libre_Caslon_Text,
   Pinyon_Script,
   Herr_Von_Muellerhoff,
-  Grand_Hotel,
+  Lily_Script_One,
 } from "next/font/google"
 import "./globals.css"
 
@@ -56,7 +56,7 @@ const herrVon = Herr_Von_Muellerhoff({
   weight: "400",
 })
 
-const grandHotel = Grand_Hotel({
+const lilyScript = Lily_Script_One({
   subsets: ["latin"],
   variable: "--font-script-b",
   weight: "400",
@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${grandHotel.variable}`}
+      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${lilyScript.variable}`}
     >
       <body className="font-sans">{children}</body>
     </html>
