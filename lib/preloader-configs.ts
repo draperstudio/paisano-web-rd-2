@@ -15,11 +15,11 @@ export const PRELOADER_ONE: PreloaderConfig = {
   lines: [
     {
       text: "Hotel",
-      className: "font-script-a1 text-[38vw] -ml-[6vw] -mt-[10vw] -mb-[14vw]",
+      className: "font-script-a1 text-[30vw] -ml-[1.5vw] -mt-[6vw] -mb-[11vw]",
     },
     {
       text: "Paisano",
-      className: "font-script-a1 text-[38vw] ml-[16vw] -mb-[12vw]",
+      className: "font-script-a1 text-[30vw] ml-[15vw] -mb-[9vw]",
     },
   ],
 }
@@ -30,11 +30,11 @@ export const PRELOADER_TWO: PreloaderConfig = {
   lines: [
     {
       text: "Hotel",
-      className: "font-script-b text-[36vw] -ml-[8vw] -mt-[6vw] -mb-[10vw]",
+      className: "font-script-b text-[28vw] ml-[1vw] -mt-[4vw] -mb-[8vw]",
     },
     {
       text: "Paisano",
-      className: "font-script-b text-[36vw] ml-[12vw] -mb-[8vw]",
+      className: "font-script-b text-[28vw] ml-[17vw] -mb-[6vw]",
     },
   ],
 }
@@ -45,7 +45,7 @@ export const PRELOADER_THREE: PreloaderConfig = {
   lines: [
     {
       text: "Paisano",
-      className: "font-script-a2 text-[40vw] ml-[8vw] -my-[8vw]",
+      className: "font-script-a2 text-[43vw] -ml-[1vw] -my-[9vw]",
     },
   ],
 }

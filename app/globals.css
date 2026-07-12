@@ -77,17 +77,13 @@ body {
   transform: none;
 }
 
-/* Wavy decorative rule — traced from 16's stacked-typographic-menu ref */
+/* Plain hairline rules — squiggly rules retired per feedback 7.12 */
 .rule-wave {
-  height: 6px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 3 Q3.5 0 7 3 T14 3' fill='none' stroke='%23221f19' stroke-width='0.8'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-size: 14px 6px;
+  height: 1px;
+  background-color: rgb(34 31 25 / 0.35);
 }
 
 .rule-wave-cream {
-  height: 6px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='6' viewBox='0 0 14 6'%3E%3Cpath d='M0 3 Q3.5 0 7 3 T14 3' fill='none' stroke='%23f4efe3' stroke-width='0.8'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-size: 14px 6px;
+  height: 1px;
+  background-color: rgb(244 239 227 / 0.45);
 }

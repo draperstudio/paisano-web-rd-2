@@ -106,7 +106,7 @@ export function WorldThree({ skipPreloader = false }: { skipPreloader?: boolean 
                   {String(ROOM_CLASSES.length).padStart(2, "0")}
                   {" )"}
                 </p>
-                <h2 className="font-serif-three text-[28px] font-medium md:text-[32px]">
+                <h2 className="font-serif-three text-[28px] md:text-[32px]">
                   {room.name}
                 </h2>
                 {room.callout ? (
@@ -191,42 +191,59 @@ export function WorldThree({ skipPreloader = false }: { skipPreloader?: boolean 
           </div>
         </section>
 
-        {/* THE LEDGER — Donica table with in-line section breaks */}
+        {/* THE LEDGER — receipt take, traced from 16's tabular-receipt ref:
+            narrow column, serif throughout, label left / value right,
+            dashed rules as the only section breaks, no grid chrome */}
         <section
           aria-labelledby="w3-ledger"
           className="border-t border-ink/15 px-6 py-20 md:px-12 md:py-28"
         >
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-14 flex items-baseline justify-between">
-              <h2 id="w3-ledger" className="font-serif-three text-3xl md:text-4xl">
+          <div className="mx-auto max-w-xl">
+            <div className="mb-12 flex flex-col gap-1">
+              <h2 id="w3-ledger" className="font-serif-three text-[26px]">
                 The Ledger
               </h2>
-              <p className="font-serif-three text-[13px] italic text-ink/55">
+              <p className="font-serif-three text-[15px] text-ink/70">
+                Hotel Paisano, Marfa, Texas
+              </p>
+              <p className="font-serif-three text-[15px] text-ink/70">
                 current as of {LEDGER.asOf}
               </p>
             </div>
-            <div className="flex flex-col gap-12">
-              {LEDGER.sections.map((section) => (
-                <div key={section.title}>
-                  <p className="pb-2 font-serif-three text-[14px] font-semibold text-wine">
-                    {section.title}
-                  </p>
-                  <dl className="flex flex-col">
+            <div className="flex flex-col gap-10">
+              {LEDGER.sections.map((section, i) => (
+                <div key={section.title} className="flex flex-col gap-4">
+                  {i > 0 ? (
+                    <div
+                      className="border-t border-dashed border-ink/40"
+                      aria-hidden="true"
+                    />
+                  ) : null}
+                  <p className="font-serif-three text-[17px]">{section.title}</p>
+                  <dl className="flex flex-col gap-2.5">
                     {section.rows.map(([label, value]) => (
                       <div
                         key={label}
-                        className="grid grid-cols-1 gap-1 border-t border-ink/25 py-3.5 md:grid-cols-2 md:gap-8"
+                        className="flex items-baseline justify-between gap-6"
                       >
-                        <dt className="font-serif-three text-[16px]">{label}</dt>
-                        <dd className="font-serif-three text-[15px] text-ink/70">
+                        <dt className="shrink-0 font-serif-three text-[16px]">
+                          {label}
+                        </dt>
+                        <dd className="text-right font-serif-three text-[16px] text-ink/80">
                           {value}
                         </dd>
                       </div>
                     ))}
-                    <div className="border-t border-ink/25" aria-hidden="true" />
                   </dl>
                 </div>
               ))}
+              <div
+                className="border-t border-dashed border-ink/40"
+                aria-hidden="true"
+              />
+              <p className="font-serif-three text-[15px] text-ink/70">
+                Front desk, any hour — 207 N Highland Ave
+              </p>
             </div>
           </div>
         </section>
