@@ -59,6 +59,14 @@ Said three-plus times across bands, so recorded once here:
 
 All 27 docs went through a double QA: (1) a keyword-tightening pass rewriting every locked control as keyword/term/phrase strings, verified against the verbatim feedback; (2) an adversarial audit by three independent agents reading only the files, hunting fabricated quotes, taste-filled locks, missed content, and meaning inversions. ~30 findings confirmed and fixed, each marked "audit fix" inline in the affected doc. The heaviest: band 1's staggered variant misread (the rule is no "The", not no "Hotel" — verified against the exploration frame), the footer's CTA over-locked against Buck's explicit "figure it out," full bleed confined to history harder than Buck said, hedges hardened into locks (map illustration, split-cards spacing, Horsey direction), and invented details killed ("hairline," "tight hand," "seamless tiling," "ceremonial," "note-from-the-house"). Non-schema lock labels are now flagged "(descriptive label, not a schema control)" wherever used. Buck's own QA remains the gate — these passes reduce his review load, they don't replace it.
 
+## Systemic corrections (7.12, from the first production session)
+
+The first v0 session on expression 01 exposed system problems, fixed at the system level (00 index.md glossary, _expression-template, expression doc writer tool), not just in doc 01:
+- **Scenarios** (Buck's word, unsettled): where one expression's meaning depends on another's state, variations are built as explicit worlds and judged as worlds. First instance: 01 V3 (A: current mark + deliberately different script / B: redrawn mark, giant text is the same gesture — B gated on 25).
+- **Lock-hardening ban**: a lock is never absolute/one-directional unless Buck's words were ("push it further" became "never closer" in a V1 and had to be torn out). Negatives are Buck's kills only; a wrong positive gets deleted, never patched with a counter-negative.
+- **Open-control fill order** codified: folder refs → Buck's documented taste across docs (cross-citation is evidence, not constraint) → settled + knowledge → Buck's live direction (supersedes stale doc text) → flagged agent judgment last.
+- **Write-back rule**: live corrections get written into the affected doc the same session, version-bumped — corrections that die in chat threads get re-made wrong by the next agent.
+
 ## Retrieval flags (couldn't pull, not skipped silently)
 
 - **refs/ are populated from the Rd 1 reference library** (images + each reference's own md, matched by layer name); **explorations/ folders are empty** — Buck exports those himself (no board screenshots).

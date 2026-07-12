@@ -14,7 +14,7 @@ Small illustration-type icons worked into compositions — the idea surfaced whe
 ## Control for (locked)
 
 - **Imagery (share):** supporting at most · garnish, not feature · few in number ("I don't want to do too many")
-- **Technique (graphic vocabulary):** illustration-style icons · drawn, not interface-icon geometry · hand shared with 27 illustration style
+- **Technique (graphic vocabulary):** illustration-style icons · drawn, not interface-icon geometry
 - **Accents:** icons "add in with the little framing, small text, and stuff" · a pairing suggestion, not a ban on other uses (audit fix: an earlier draft said "never floating alone" — Buck never prohibited that)
 
 ## Leave open (variation space)
