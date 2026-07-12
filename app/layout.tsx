@@ -11,6 +11,7 @@ import {
   Courier_Prime,
 } from "next/font/google"
 import "./globals.css"
+import { IndexReturn } from "@/components/index-return"
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -89,7 +90,10 @@ export default function RootLayout({
       lang="en"
       className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${greatVibes.variable} ${courierPrime.variable}`}
     >
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <IndexReturn />
+      </body>
     </html>
   )
 }
