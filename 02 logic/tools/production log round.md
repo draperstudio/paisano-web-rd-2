@@ -12,7 +12,12 @@ This tool is one station in a cycle that repeats *within* the expression until i
 
 Loop depth follows the check tiering in `00 index.md`. **High-volume rounds (this one): one round per variation set by default** — re-enter the build-again loop only when the round finds a doc or prompt fault worth rebuilding for; otherwise record, push, move to the next expression. **Per-expression budget in a volume pass: 3–5 variations, then log and move on** — later passes return to the expression with the prior round's preserve/avoid in hand. Never declare an axis "exhausted" by feel; axes are combinatorial and a full sweep is not the job. Iterate-until-converged is slow-production behavior, not a volume-pass gate — a run that perfects one expression and never reaches the rest has failed the round it's in.
 
-**This tool is lane-agnostic** — it runs the same whether the builder is an agent driving Paper, a v0 session, or Figma Make reading this repo. Lane differences are named where they exist (fault line, below).
+**This tool is lane-agnostic** — it runs the same whether the builder is an agent driving Paper, a v0 session, or Figma Make reading this repo. The control set (the expression docs) is shared across all lanes, so a doc fix written back from any lane corrects every lane's next run. The one lane difference is the fault-line taxonomy:
+
+- **Generation lane** (a compiled prompt from `08 briefs/` runs in a tool): doc / prompt / execution / axis-finding.
+- **Direct-build lane** (the agent reads the docs and builds in-tool — v0, Figma Make, an agent working a canvas live): doc / execution / axis-finding. **No prompt bucket exists — don't invent one.** "The instructions were unclear" is not a category: if the doc misled you, that's a doc problem, edit it; if you missed what it said, that's an execution problem, fix the build. A phantom prompt bucket is a blame sink that lets both off the hook.
+
+"Build again" means whatever rebuilding is in your lane — recompile and rerun the prompt, or rebuild the variation directly.
 
 **Reads:** the set's capture.md files (`09 output/[concept]/[tool]-[n]/` and the expression's `explorations/`) · the expression's `doc.md` (the control set being tested) and `feedback.md` · `refs/` for the judging standard · `blocks/controls - composition.md` / `controls - graphic.md` and the matching AD logic block, when classifying a finding against controls · prior rounds in the same folder
 **Writes:** one Round entry appended to the expression's capture record (copied per the contract) · `doc.md` revisions when the fault line lands there — version-bumped, marked "(agent call, review)"
