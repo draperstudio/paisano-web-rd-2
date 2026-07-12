@@ -1,6 +1,6 @@
 # 01 preloader script — expressions doc
 
-**Version:** V1 · 7.12.26 · created from the board pass (Buck's board comment, worked by AI — Buck QAs)
+**Version:** V2 · 7.12.26 · Buck's correction: the word-voice is a variation axis with two sanctioned voices (different script / redrawn mark), not a one-way "never closer" lock. V1 over-locked it. Also: expressions are tested in isolation this round — cross-brand ties are notes, not constraints on variations.
 **Type:** typographic treatment — a recurring expressive moment for the website, not a page layout. (First-principles typing per _board-pass-record.md; index taxonomy not applied.)
 
 ## What it is
@@ -11,21 +11,21 @@ Oversized script typography as an expressive moment on the website — the prelo
 
 The scale and the freedom of it: "The preloader is different because it is intentionally not the logo... That gives us much more freedom to use a beautiful script without creating confusion. If anything, we'd push it even further so it's obvious this is an expressive typographic moment rather than the brand mark itself." Specifically kept: just the word "Paisano" in the center ("I actually like"), and the staggered stacks — "Hotel Paisano, which is the standard," and the "Hotel Paisano / Marfa, Tex." stack with the place name in the big script. (Audit fix: the exploration frame reads "The Hotel Paisano / Marfa, Tex." — the thing "we already don't do, duh" is including **"The"**, not dropping "Hotel." An earlier draft misread this.) Also surfaced here: the small offset image with micro text, maybe cycling through images — that move now lives in 17 small image offset (AI grouping, review).
 
-## The two directions — read this before varying
+## The word-voice axis — Buck's correction, 7.12 (supersedes V1's "never closer" lock)
 
-The band carries TWO live directions, and only one of them lives in this expression:
+Variations of this expression cycle the words on screen through **two sanctioned voices**:
 
-1. **Script away from the logo (THIS expression).** The website's oversized script is intentionally not the logo, and inside this expression the lock is one-directional: pushed further from the wordmark, never closer. Applies to preloader/typographic-moment variations only.
-2. **Logo toward the script (NOT this expression — and NOT dead).** The logo itself should evolve — "more natural, more fluid, better drawn," moving *slightly toward* the qualities of these scripts while staying clearly the neon sign. That direction is alive and lives in **25 wordmark redraw**; the logo-script question is a standing open question, not a settled decision.
+1. **A deliberately different script** — a beautiful script that is obviously not the logo, pushed so it reads as an expressive typographic moment.
+2. **The mark itself, redrawn toward script** — very close to the wordmark SVG, but redesigned in 25 wordmark redraw's direction: more natural, more fluid, better drawn, still clearly the sign. Use the redrawn mark as the on-screen words and see it at this scale.
 
-Do not conflate them ("those are two separate decisions, and I don't think they should be conflated") — but do not read direction 1's lock as killing direction 2. A variation of this expression never drifts toward the wordmark; the wordmark, in its own effort, may drift toward this.
+Buck wants to SEE both in the first concept's variations — this is how the logo-script question gets tested, not decided on paper. The current SVG as-is is not one of the voices; the redrawn one is. (The logo-script question itself stays open; these variations are evidence for it.)
 
 ## Control for (locked)
 
 - **Type:** extreme scale (2.0+) · type-as-image · script at frame scale · oversized script · beautiful script, expressive not functional · words in play: "Paisano" solo (sanctioned here only) / "Hotel Paisano" staggered / "Hotel Paisano" + "Marfa, Tex." with the place name carrying the big script
 - **Hierarchy:** absolute · the script IS the layout · everything else footnote-scale
 - **Imagery:** none to whisper · type carries the whole surface (caveat: Buck liked this band's small-offset-image variant; its home in 17 is an AI grouping pending his review — if he pulls it back here, this lock loosens)
-- **Brand:** deliberately-not-the-logo · expressive typographic moment, not the brand mark · pushed further from the wordmark, never closer · zero confusion with the mark
+- **Brand (word-voice):** two sanctioned voices, cycle both — deliberately different script / the mark redrawn toward script (per 25's direction) · never the current SVG as-is · the moment always reads expressive, not functional branding
 - **Subject:** preloader (first home) · recurring large typographic moment sitewide (broader use)
 
 ## Leave open (variation space)
@@ -38,10 +38,9 @@ Do not conflate them ("those are two separate decisions, and I don't think they 
 
 ## Negative
 
-- This never becomes the logo. The logo never becomes this script wholesale — but the logo moving *toward* these script qualities is a live, separate direction (25 wordmark redraw), not a negative. Only the conflation is dead.
+- The current wordmark SVG as-is — the mark only appears here in its redrawn-toward-script form.
 - No "The" in the wordmark stacks — "The Hotel Paisano" is out; "we already don't do" it.
 - "Paisano" running off the screen edge in one exploration was a bug, not a direction ("that's not supposed to be happening") — though it seeded the offset-image idea that moved to 17.
-- Don't use the current wordmark's letterforms for this — the whole point is freedom from the mark.
 
 ## Open questions
 
