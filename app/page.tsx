@@ -7,6 +7,9 @@ type Entry = {
   href: string
   label: string
   note?: string
+  /* When set, renders numbered links var-1..var-N off the entry's base
+     path so every variation is reachable from the index. */
+  variants?: number
 }
 
 type Group = {
@@ -38,41 +41,42 @@ const GROUPS: Group[] = [
     numeral: "III",
     title: "Type and text moments",
     entries: [
-      { href: "/e02/var-1", label: "02 title over image", note: "four variations" },
-      { href: "/e05/var-1", label: "05 script subtext", note: "four variations" },
-      { href: "/e08/var-1", label: "08 text framing", note: "three variations" },
-      { href: "/e19/var-1", label: "19 centered minimal", note: "three variations" },
+      { href: "/e02/var-1", label: "02 title over image", note: "5 & 6 are round two", variants: 6 },
+      { href: "/e05/var-1", label: "05 script subtext", note: "5 is round two", variants: 5 },
+      { href: "/e08/var-1", label: "08 text framing", note: "4 is round two", variants: 4 },
+      { href: "/e19/var-1", label: "19 centered minimal", note: "4 is round two", variants: 4 },
     ],
   },
   {
     numeral: "IV",
     title: "Systems",
     entries: [
-      { href: "/e09/var-1", label: "09 roman numerals", note: "three variations" },
-      { href: "/e11/var-1", label: "11 microtext", note: "two variations" },
-      { href: "/e14/var-1", label: "14 folio rule", note: "three variations" },
+      { href: "/e09/var-1", label: "09 roman numerals", variants: 3 },
+      { href: "/e11/var-1", label: "11 microtext", variants: 2 },
+      { href: "/e14/var-1", label: "14 folio rule", note: "4 is round two", variants: 4 },
+      { href: "/e04/var-1", label: "04 room detail frame", note: "round two — first built variant", variants: 1 },
       { href: "/e24/rip", label: "24 nav bar", note: "five header studies, one board" },
-      { href: "/e22/var-1", label: "22 footer", note: "three variations" },
+      { href: "/e22/var-1", label: "22 footer", variants: 3 },
     ],
   },
   {
     numeral: "V",
     title: "Image moments",
     entries: [
-      { href: "/e03/var-1", label: "03 framed hero", note: "three variations" },
-      { href: "/e17/var-1", label: "17 small image offset", note: "three variations" },
-      { href: "/e18/var-1", label: "18 split cards", note: "three variations" },
-      { href: "/e20/var-1", label: "20 card on image", note: "three variations" },
-      { href: "/e21/var-1", label: "21 full-bleed history", note: "three variations" },
+      { href: "/e03/var-1", label: "03 framed hero", note: "4 is round two", variants: 4 },
+      { href: "/e17/var-1", label: "17 small image offset", note: "4 is round two", variants: 4 },
+      { href: "/e18/var-1", label: "18 split cards", variants: 3 },
+      { href: "/e20/var-1", label: "20 card on image", variants: 3 },
+      { href: "/e21/var-1", label: "21 full-bleed history", variants: 3 },
     ],
   },
   {
     numeral: "VI",
     title: "Illustration and texture",
     entries: [
-      { href: "/e06/var-1", label: "06 illustrated icons", note: "three deployments" },
+      { href: "/e06/var-1", label: "06 illustrated icons", note: "three deployments", variants: 3 },
       { href: "/e27/board", label: "27 illustration style", note: "three candidates, one board" },
-      { href: "/e23/var-1", label: "23 faded illustration", note: "provisional on 27" },
+      { href: "/e23/var-1", label: "23 faded illustration", note: "provisional on 27", variants: 3 },
       { href: "/e28/swatches", label: "28 the texture — swatches" },
       { href: "/e28/preloader", label: "28 the texture — under the preloader" },
     ],
@@ -107,23 +111,42 @@ export default function Index() {
               </h2>
             </div>
             <ul className="flex flex-col">
-              {g.entries.map((e) => (
-                <li key={e.href}>
-                  <Link
-                    href={e.href}
-                    className="group flex items-baseline justify-between gap-4 border-b border-ink/10 py-3 transition-colors hover:bg-ink/[0.03]"
+              {g.entries.map((e) => {
+                const base = e.href.replace(/\/var-\d+$/, "")
+                return (
+                  <li
+                    key={e.href}
+                    className="flex items-baseline justify-between gap-4 border-b border-ink/10 py-3"
                   >
-                    <span className="font-serif text-lg text-ink group-hover:text-maroon">
-                      {e.label}
-                    </span>
+                    <div className="flex items-baseline gap-4">
+                      <Link
+                        href={e.href}
+                        className="font-serif text-lg text-ink transition-colors hover:text-maroon"
+                      >
+                        {e.label}
+                      </Link>
+                      {e.variants && e.variants > 1 && (
+                        <span className="flex items-baseline gap-2">
+                          {Array.from({ length: e.variants }, (_, i) => (
+                            <Link
+                              key={i}
+                              href={`${base}/var-${i + 1}`}
+                              className="font-serif-two text-[12px] text-ink/50 underline-offset-2 transition-colors hover:text-maroon hover:underline"
+                            >
+                              {i + 1}
+                            </Link>
+                          ))}
+                        </span>
+                      )}
+                    </div>
                     {e.note && (
                       <span className="shrink-0 text-right font-serif-two text-[11px] uppercase tracking-[0.15em] text-ink/50">
                         {e.note}
                       </span>
                     )}
-                  </Link>
-                </li>
-              ))}
+                  </li>
+                )
+              })}
             </ul>
           </section>
         ))}
