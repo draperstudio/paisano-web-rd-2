@@ -1,0 +1,77 @@
+import type { Metadata } from "next"
+import {
+  Archivo,
+  EB_Garamond,
+  Libre_Caslon_Text,
+  Mr_Dafoe,
+  Pinyon_Script,
+  Herr_Von_Muellerhoff,
+  Source_Serif_4,
+} from "next/font/google"
+import "./globals.css"
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-archivo",
+  weight: ["400", "500", "600"],
+})
+
+const libreCaslon = Libre_Caslon_Text({
+  subsets: ["latin"],
+  variable: "--font-serif-one",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+})
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif-two",
+  weight: ["400", "600"],
+  style: ["normal", "italic"],
+})
+
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-serif-three",
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+})
+
+const pinyon = Pinyon_Script({
+  subsets: ["latin"],
+  variable: "--font-script-a1",
+  weight: "400",
+})
+
+const herrVon = Herr_Von_Muellerhoff({
+  subsets: ["latin"],
+  variable: "--font-script-a2",
+  weight: "400",
+})
+
+const mrDafoe = Mr_Dafoe({
+  subsets: ["latin"],
+  variable: "--font-script-b",
+  weight: "400",
+})
+
+export const metadata: Metadata = {
+  title: "Hotel Paisano — Round Two Variations",
+  description:
+    "Expression variations: preloader script, room pages, which room for which trip, the ledger. Marfa, Texas.",
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html
+      lang="en"
+      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${sourceSerif.variable} ${ebGaramond.variable} ${pinyon.variable} ${herrVon.variable} ${mrDafoe.variable}`}
+    >
+      <body className="font-sans">{children}</body>
+    </html>
+  )
+}

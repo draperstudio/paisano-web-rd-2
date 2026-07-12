@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--cream);
+  --color-foreground: var(--ink);
+  --color-maroon: #641d18;
+  --color-wine: #42101b;
+  --color-cream: #f4efe3;
+  --color-parchment: #e8dfd0;
+  --color-parchment-deep: #dcd3c0;
+  --color-ink: #221f19;
+  --color-stone: #6f6759;
+
+  --font-sans: var(--font-archivo);
+  --font-serif: var(--font-serif-one);
+  --font-serif-two: var(--font-serif-two);
+  --font-serif-three: var(--font-serif-three);
+  --font-script-a1: var(--font-script-a1);
+  --font-script-a2: var(--font-script-a2);
+  --font-script-b: var(--font-script-b);
+}
+
+:root {
+  --cream: #f4efe3;
+  --ink: #221f19;
+}
+
+html {
+  background-color: #f4efe3;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes preloader-in {
+  0% {
+    opacity: 0;
+    transform: translateY(0.15em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes preloader-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.preloader-word {
+  animation: preloader-in 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.preloader-word-2 {
+  animation-delay: 260ms;
+}
+
+.preloader-word-3 {
+  animation-delay: 480ms;
+}
+
+.preloader-exit {
+  animation: preloader-out 600ms ease both;
+}
