@@ -3,10 +3,21 @@
    capture routes (/var-N/preloader) so what you capture is exactly
    what plays. */
 
+export type PreloaderLine = {
+  /** Type line — a word from the sanctioned set in a script face */
+  text?: string
+  /** Mark line — a word of the 25 traced wordmark (Scenario B only:
+      "only the trace tests it," decision 13). Sized via w-* classes;
+      height follows the sign's own aspect ratio. */
+  mark?: "hotel" | "paisano"
+  markVariant?: "a" | "b" | "c"
+  className: string
+}
+
 export type PreloaderConfig = {
   groundClass: string
   kicker?: string
-  lines: { text: string; className: string }[]
+  lines: PreloaderLine[]
 }
 
 export const PRELOADER_ONE: PreloaderConfig = {
@@ -24,17 +35,25 @@ export const PRELOADER_ONE: PreloaderConfig = {
   ],
 }
 
+/* Scenario B rebuilt on the 25 trace (round v0 7.12.26-2) — the Great
+   Vibes substitute failed the test by definition (decision 13: "only the
+   trace tests it"). Variant B (eased) as default until Buck calls the dial.
+   Scale: Hotel ~72vw, Paisano ~102vw — the trace at full-frame size,
+   Paisano grazing/clipping the right edge only (decision 4: subtle bleed,
+   never words half-lost). */
 export const PRELOADER_TWO: PreloaderConfig = {
   groundClass: "bg-maroon text-cream",
   kicker: "Marfa, Texas — Est. 1930",
   lines: [
     {
-      text: "Hotel",
-      className: "font-script-b text-[28vw] ml-[1vw] -mt-[4vw] -mb-[8vw]",
+      mark: "hotel",
+      markVariant: "b",
+      className: "w-[72vw] ml-[2vw] -mt-[2vw] -mb-[3vw]",
     },
     {
-      text: "Paisano",
-      className: "font-script-b text-[28vw] ml-[17vw] -mb-[6vw]",
+      mark: "paisano",
+      markVariant: "b",
+      className: "w-[97vw] ml-[5vw]",
     },
   ],
 }

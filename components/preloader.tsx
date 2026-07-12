@@ -1,10 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { TracedWord } from "./traced-mark"
+import type { PreloaderLine } from "@/lib/preloader-configs"
 
 type PreloaderProps = {
-  /** Lines of the sanctioned word set, rendered staggered top-to-bottom */
-  lines: { text: string; className: string }[]
+  /** Lines of the sanctioned word set — script type or 25-traced mark */
+  lines: PreloaderLine[]
   /** Ground + text colors */
   groundClass: string
   /** Small secondary line, sans, tiny — like the ref's "OUTUBRO 2025" */
@@ -39,7 +41,15 @@ export function Preloader({ lines, groundClass, kicker, frozen = false, onDone }
             key={i}
             className={`preloader-word preloader-word-${i + 1} leading-none whitespace-nowrap select-none ${line.className}`}
           >
-            {line.text}
+            {line.mark ? (
+              <TracedWord
+                word={line.mark}
+                variant={line.markVariant ?? "b"}
+                className="block w-full"
+              />
+            ) : (
+              line.text
+            )}
           </div>
         ))}
         {/* Kicker sits inside the composition, upper-left third — like the

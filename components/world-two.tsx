@@ -1,10 +1,12 @@
 "use client"
 
 /* WORLD TWO — Scenario B (converged world)
-   Logo: the working redraw direction — Mr Dafoe stands in for the neon
-   sign's structure with strokes moved toward natural fluid script.
-   The preloader IS that same script at frame-bleeding scale — mark and
-   moment are one gesture in this world.
+   Logo: the 25 traced redraw (variant B, eased) — the sign's own
+   letterforms with curve-fit moved toward natural fluid drawing.
+   The Great Vibes / font-script-b substitute is gone: "only the trace
+   tests it" (decision 13, round v0 7.12.26-2).
+   The preloader IS that same traced mark at frame-bleeding scale —
+   mark and moment are one gesture in this world.
    Script elsewhere follows expression 07's actual move: switching MID-LINE
    inside running text — never as a price sticker or floating accent.
    Rooms: editorial spread. Data: receipt/Donica hairline rows.
@@ -13,16 +15,9 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Preloader } from "./preloader"
+import { TracedMark } from "./traced-mark"
 import { ROOM_CLASSES, MATCHER_TRIPS, LEDGER, MEDIA } from "@/lib/data"
 import { PRELOADER_TWO } from "@/lib/preloader-configs"
-
-function RedrawnMark({ className = "" }: { className?: string }) {
-  return (
-    <span className={`font-script-b leading-none ${className}`}>
-      Hotel Paisano
-    </span>
-  )
-}
 
 export function WorldTwo({ skipPreloader = false }: { skipPreloader?: boolean }) {
   const [loaded, setLoaded] = useState(skipPreloader)
@@ -32,7 +27,7 @@ export function WorldTwo({ skipPreloader = false }: { skipPreloader?: boolean })
       {!loaded && <Preloader {...PRELOADER_TWO} onDone={() => setLoaded(true)} />}
 
       <header className="flex items-center justify-between border-b border-ink/15 px-6 py-4 md:px-12">
-        <RedrawnMark className="text-3xl text-maroon md:text-4xl" />
+        <TracedMark variant="b" className="h-6 text-maroon md:h-7" />
         <nav aria-label="Main" className="flex items-baseline gap-8">
           <span className="hidden font-serif-two text-[13px] tracking-[0.18em] uppercase text-ink/70 md:inline">
             Rooms
@@ -194,7 +189,7 @@ export function WorldTwo({ skipPreloader = false }: { skipPreloader?: boolean })
 
       <footer className="border-t border-ink/15 px-6 py-10 md:px-12">
         <div className="flex flex-col items-center gap-2">
-          <RedrawnMark className="text-2xl text-maroon" />
+          <TracedMark variant="b" className="h-5 text-maroon" />
           <p className="font-serif-two text-[12px] italic text-ink/55">
             207 N Highland Ave, Marfa, Texas
           </p>
