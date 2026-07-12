@@ -19,6 +19,7 @@
   --font-script-a1: var(--font-script-a1);
   --font-script-a2: var(--font-script-a2);
   --font-script-b: var(--font-script-b);
+  --font-typewriter: var(--font-typewriter);
 }
 
 :root {

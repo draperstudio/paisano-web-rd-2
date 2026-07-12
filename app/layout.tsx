@@ -8,6 +8,7 @@ import {
   Pinyon_Script,
   Herr_Von_Muellerhoff,
   Great_Vibes,
+  Courier_Prime,
 } from "next/font/google"
 import "./globals.css"
 
@@ -62,6 +63,16 @@ const greatVibes = Great_Vibes({
   weight: "400",
 })
 
+/* 09 roman numerals: the reference's metadata blocks are set in a
+   typewriter face — Courier Prime is the restrained stand-in.
+   Buck's "try some different typefaces" is the cycling axis. */
+const courierPrime = Courier_Prime({
+  subsets: ["latin"],
+  variable: "--font-typewriter",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+})
+
 export const metadata: Metadata = {
   title: "Hotel Paisano — Round Two Variations",
   description:
@@ -76,7 +87,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${greatVibes.variable}`}
+      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${greatVibes.variable} ${courierPrime.variable}`}
     >
       <body className="font-sans">{children}</body>
     </html>
