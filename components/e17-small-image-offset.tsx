@@ -8,7 +8,12 @@
    eyebrow stands alone, unruled).
    Small-image position is explicitly unlocked ("could be centered or
    offset. That's not really the point") — var-1 offsets high, var-2
-   centers; var-3 runs band 1's cycling idea. */
+   centers; var-3 runs band 1's cycling idea.
+   Var-4 (round two, re-studied against the ref): the ref's power is the
+   EXTREMITY of the size gap — the large image runs nearly the full
+   frame height while the small image is a tiny jewel isolated high and
+   right, far above the text block, which sits low with a deep
+   first-line indent. Vars 1–3 undersold all three moves. */
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
@@ -123,6 +128,57 @@ export function E17Centered() {
         }
       />
     </Frame>
+  )
+}
+
+/* Variation D — round two: the ref's actual proportions.
+   Large image nearly full height; small image a tiny isolated jewel,
+   high and right of the text axis; text low, deep first-line indent.
+   Kills held: serif-only heading, no eyebrow rule, no script. */
+export function E17ExtremeGap() {
+  return (
+    <main className="min-h-screen bg-cream text-ink">
+      <div className="mx-auto grid min-h-screen max-w-6xl grid-cols-1 gap-10 px-5 py-8 md:grid-cols-[46fr_54fr] md:gap-0 md:px-10">
+        {/* The large image holds nearly the full frame height */}
+        <div className="relative min-h-[60vh] w-full overflow-hidden md:min-h-[calc(100vh-4rem)]">
+          <Image
+            src={MEDIA.courtyardFountain || "/placeholder.svg"}
+            alt="The courtyard fountain at the Hotel Paisano"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 42vw, 92vw"
+          />
+        </div>
+
+        <div className="relative flex flex-col md:pl-20">
+          {/* The tiny jewel, isolated high and right of the text axis */}
+          <div className="flex justify-center pt-[10vh] md:pr-8">
+            <div className="relative aspect-[5/6] w-28 md:w-32">
+              <Image
+                src={MEDIA.lobbyLoungeArch || "/placeholder.svg"}
+                alt="Arched lounge opening seen from the courtyard"
+                fill
+                className="object-cover"
+                sizes="128px"
+              />
+            </div>
+          </div>
+
+          {/* The text sits low, well below the jewel */}
+          <div className="max-w-md pt-[16vh] md:pr-10">
+            <p className="font-typewriter text-[10px] uppercase tracking-[0.3em] text-ink/70">
+              {COPY.eyebrow}
+            </p>
+            <h1 className="pt-3 font-serif text-3xl text-ink md:text-4xl">
+              {COPY.heading}
+            </h1>
+            <p className="pt-5 font-serif text-[14.5px] leading-relaxed text-ink/85 [text-indent:3.5em]">
+              {COPY.body}
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   )
 }
 

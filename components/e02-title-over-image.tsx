@@ -12,8 +12,17 @@
      B — the image-cycling branch: images cycle through, slightly askew
      C — fifth-row branch, Scenario B: traced wordmark large up top, image below
      D — logo-with-above-and-below-text branch, Scenario A: current mark centered
+     E — round two, studied against the ref: the ref is a COLOR-FIELD POSTER.
+         The ground is the brand color edge to edge; the title is enormous
+         (two stacked lines eating the top third); the photo is a small
+         jewel (~1/3 frame width) in a tone-on-tone embossed frame; below,
+         a typewriter-caps line pair then a small justified paragraph.
+         A–D got this weight distribution backwards (pale ground, small
+         title, big photo). E corrects it on maroon.
+     F — same poster structure on wine, the deeper dial.
    Negatives held: no typeface mixing inside the stack, no all-caps
-   serif wordmark, no solo "Paisano", no sans titles.
+   serif wordmark (ref uses caps; we keep its scale/stack in Title Case),
+   no solo "Paisano", no sans titles.
    Facts: lib/data.ts (06 knowledge). Current photography only — no renders. */
 
 import { useEffect, useState } from "react"
@@ -22,7 +31,7 @@ import { MEDIA } from "@/lib/data"
 import { TracedMark } from "./traced-mark"
 import { CurrentMark } from "./current-mark"
 
-export type E02Variant = "a" | "b" | "c" | "d"
+export type E02Variant = "a" | "b" | "c" | "d" | "e" | "f"
 
 /* Shared real content — the hotel introduction. Facts from the ledger. */
 const KICKER = "Marfa, Texas — Est. 1930"
@@ -80,7 +89,77 @@ function CyclingImage() {
   )
 }
 
+/* ——— Round two: the color-field poster (variants E / F) ———
+   Weight distribution traced from the ref:
+   title ≈ top third at ~11vw, image ≈ 30% frame width, text ≈ small
+   footer block. Everything centered on one axis. */
+function PosterVariant({ tone }: { tone: "maroon" | "wine" }) {
+  const ground = tone === "maroon" ? "bg-maroon" : "bg-wine"
+  return (
+    <main className={`min-h-screen ${ground} text-cream`}>
+      <section
+        aria-labelledby="e02-title"
+        className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-between gap-10 px-6 py-14 text-center md:py-16"
+      >
+        {/* ——— The title owns the top third ——— */}
+        {/* Both lines optically equal width, as in the ref — "Hotel" is
+            5 glyphs to "Paisano"'s 7, so it takes a larger size to hold
+            the same measure. */}
+        <h1 id="e02-title" className="font-serif text-cream">
+          <span className="block leading-[0.9] text-[clamp(5rem,13.5vw,11rem)]">
+            Hotel
+          </span>
+          <span className="block leading-[0.9] text-[clamp(4rem,10.8vw,8.8rem)]">
+            Paisano
+          </span>
+        </h1>
+
+        {/* ——— The image is a small jewel in a tone-on-tone frame ——— */}
+        <figure className="w-full max-w-[17rem]">
+          <div
+            className={`${ground} p-3`}
+            style={{
+              boxShadow:
+                "inset 0 1px 0 rgba(244,239,227,0.22), inset 0 -1px 0 rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.3)",
+            }}
+          >
+            <div
+              className="relative aspect-square w-full overflow-hidden"
+              style={{
+                boxShadow:
+                  "0 0 0 1px rgba(244,239,227,0.28), inset 0 0 0 1px rgba(0,0,0,0.3)",
+              }}
+            >
+              <Image
+                src={MEDIA.courtyardFountain || "/placeholder.svg"}
+                alt="The courtyard fountain"
+                fill
+                className="object-cover"
+                sizes="272px"
+              />
+            </div>
+          </div>
+        </figure>
+
+        {/* ——— Typewriter caps pair, then the small justified block ——— */}
+        <div className="flex max-w-xl flex-col items-center gap-5">
+          <p className="font-typewriter text-[12px] font-bold uppercase leading-relaxed tracking-[0.18em] text-cream/90">
+            Marfa, Texas — Est. 1930
+            <br />
+            Forty-two rooms on Highland Avenue
+          </p>
+          <p className="text-justify font-serif-three text-[13px] leading-relaxed text-cream/80 [text-align-last:center]">
+            {BODY_LEAD} {BODY_TAIL}
+          </p>
+        </div>
+      </section>
+    </main>
+  )
+}
+
 export function E02TitleOverImage({ variant }: { variant: E02Variant }) {
+  if (variant === "e") return <PosterVariant tone="maroon" />
+  if (variant === "f") return <PosterVariant tone="wine" />
   return (
     <main className="min-h-screen bg-parchment text-ink">
       <section
