@@ -14,6 +14,14 @@
    var-2 dramatic spread, var-3 the 12-kinship cycle (framing lines
    pushed to the panel edges at micro scale, per this doc's own
    "cycle them together" note).
+   Var-4 (round two, re-studied against the Oliver du Puy ref): the ref
+   is a TWO-PANEL composition on a dark ground. Left: tall photo with
+   tracked caps overlaid at mid-frame. Right: light panel framed by
+   text — a nav row across the top, a caps row across the base, and
+   between them a centered small-caps title, a fully centered paragraph
+   (every line centered, not justified), a single dot glyph, and a
+   three-line colophon. Round one flattened this into one stack and
+   lost both the split and the mid-frame overlay.
 */
 
 import Image from "next/image"
@@ -48,6 +56,81 @@ function PanelImage() {
         </p>
       </div>
     </div>
+  )
+}
+
+/* Variation 4 — round two: the ref's two-panel composition. */
+export function E08SplitPanels() {
+  return (
+    <main className="min-h-screen bg-ink px-6 py-10 md:px-10 md:py-14">
+      <div className="mx-auto grid w-full max-w-5xl gap-6 md:grid-cols-[43fr_57fr]">
+        {/* ——— Left panel: tall photo, tracked caps at mid-frame ——— */}
+        <div className="relative min-h-[70vh] overflow-hidden">
+          <Image
+            src={MEDIA.courtyardFountain || "/placeholder.svg"}
+            alt="The courtyard fountain of the Hotel Paisano"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 40vw, 92vw"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-6">
+            <p className="w-full text-center font-serif-two text-[13px] uppercase tracking-[0.35em] text-cream [text-shadow:0_1px_8px_rgba(26,22,18,0.5)]">
+              Hotel <span className="inline-block w-10" /> Paisano
+            </p>
+            <p className="w-full text-center font-serif-two text-[13px] uppercase tracking-[0.35em] text-cream [text-shadow:0_1px_8px_rgba(26,22,18,0.5)]">
+              Marfa <span className="inline-block w-14" /> and <span className="inline-block w-14" /> Texas
+            </p>
+          </div>
+        </div>
+
+        {/* ——— Right panel: the text-framed sheet ——— */}
+        <div className="flex min-h-[70vh] flex-col bg-cream px-8 py-6 md:px-10">
+          {/* Top framing row: the nav */}
+          <div className="flex items-baseline justify-between gap-4">
+            <a href="#" className="font-serif-two text-[11px] uppercase tracking-[0.25em] text-ink">
+              Menu
+            </a>
+            <p className="font-serif-two text-[11px] uppercase tracking-[0.3em] text-ink">
+              Hotel <span className="inline-block w-4" /> Paisano
+            </p>
+            <a href="#" className="font-serif-two text-[11px] uppercase tracking-[0.25em] text-ink">
+              Back
+            </a>
+          </div>
+
+          <div className="flex flex-1 flex-col items-center justify-center gap-8 py-10 text-center">
+            <h1 className="font-serif-two text-[14px] uppercase tracking-[0.3em] text-ink">
+              The Building
+            </h1>
+
+            {/* Every line centered, as in the ref */}
+            <p className="max-w-md font-serif-three text-[13.5px] leading-[1.9] text-ink/85">
+              {FACTS.body}
+            </p>
+
+            <span aria-hidden="true" className="block h-2 w-2 rounded-full bg-ink/50" />
+
+            <p className="font-serif-two text-[12px] tracking-[0.15em] leading-loose text-ink/80">
+              Trost &amp; Trost, El Paso
+              <br />
+              Marfa, Texas
+              <br />
+              1930
+            </p>
+          </div>
+
+          {/* Bottom framing row */}
+          <div className="flex items-baseline justify-between gap-4">
+            <p className="font-serif-two text-[11px] uppercase tracking-[0.3em] text-ink">
+              The Grande Dame
+            </p>
+            <p className="font-serif-two text-[11px] uppercase tracking-[0.3em] text-ink">
+              of West Texas
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   )
 }
 

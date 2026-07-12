@@ -13,9 +13,46 @@
 
 import { TracedWord } from "./traced-mark"
 
-type Variant = "serif" | "script" | "trace"
+type Variant = "serif" | "script" | "trace" | "faithful"
+
+/* ——— Round two: the ref's actual geometry, re-measured ———
+   The word sits HIGHER than round one had it (~1/3 down, not 42%),
+   set BOLD at modest size — quiet but firm, not airy. The two bottom
+   anchors are asymmetric: the left one carries a tiny stacked second
+   line; they sit slightly left and right of the center axis, closer
+   together than round one's wide gap. */
+function FaithfulVariant() {
+  return (
+    <section
+      className="flex min-h-screen flex-col bg-cream"
+      aria-label="Hotel Paisano"
+    >
+      <div className="flex flex-[33] items-end justify-center">
+        <h1 className="font-serif-two text-2xl font-bold tracking-[0.12em] text-ink md:text-3xl">
+          Paisano
+        </h1>
+      </div>
+
+      <div className="flex flex-[67] flex-col justify-end">
+        <div className="flex items-start justify-center gap-12 pb-14 md:gap-16">
+          <p className="text-center font-serif-two text-[10px] font-bold uppercase leading-relaxed tracking-[0.25em] text-ink/70">
+            Marfa
+            <br />
+            <span className="font-normal normal-case tracking-[0.15em] text-ink/50">
+              Texas
+            </span>
+          </p>
+          <p className="font-serif-two text-[10px] font-bold uppercase tracking-[0.25em] text-ink/70">
+            Est. 1930
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export function E19CenteredMinimal({ variant }: { variant: Variant }) {
+  if (variant === "faithful") return <FaithfulVariant />
   return (
     <section
       className="flex min-h-screen flex-col bg-cream"

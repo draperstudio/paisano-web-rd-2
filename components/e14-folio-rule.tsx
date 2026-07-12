@@ -79,6 +79,57 @@ function HostSection({
   )
 }
 
+/* Variation D — round two: the ref's WHOLE composition, not just the
+   foot. A portrait split-field card: photo owns the top ~55% full
+   bleed; the lower field carries a staggered two-block statement in
+   tracked caps (set in the brand serif — the ref's thin sans is dead
+   per the doc), then the short stub rule alone on the left, then two
+   serif lines with the /05 folio at bottom right. */
+export function E14SplitField() {
+  return (
+    <main className="flex min-h-screen items-center justify-center bg-ink/15 px-4 py-10">
+      <article className="flex w-full max-w-md flex-col overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.18)]">
+        {/* ——— Top field: the photo, full bleed to the card edges ——— */}
+        <div className="relative aspect-[4/3.4] w-full">
+          <Image
+            src={MEDIA.facadeEntrance || "/placeholder.svg"}
+            alt="The entrance doors of the Hotel Paisano"
+            fill
+            className="object-cover"
+            sizes="448px"
+          />
+        </div>
+
+        {/* ——— Lower field ——— */}
+        <div className="flex flex-col bg-cream px-7 pb-7 pt-9">
+          <p className="font-serif-two text-[15px] uppercase leading-[1.9] tracking-[0.28em] text-ink">
+            The finest hotel
+            <br />
+            between El Paso
+          </p>
+          <p className="pt-4 text-right font-serif-two text-[15px] uppercase leading-[1.9] tracking-[0.28em] text-ink">
+            and San
+            <br />
+            Antonio.
+          </p>
+
+          <div className="mt-9 w-10 border-t border-ink/60" />
+
+          <div className="flex items-end justify-between gap-8 pt-7">
+            <div className="font-serif text-[14px] leading-relaxed text-ink/85">
+              <p>Dedicated June 1930.</p>
+              <p>Trost &amp; Trost, architects, El Paso.</p>
+            </div>
+            <p className="shrink-0 font-typewriter text-[13px] tracking-[0.04em] text-ink/70">
+              /05
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+  )
+}
+
 /* Variation A — serif italic lines, short stub rule (closest to ref). */
 export function E14Serif() {
   return (
