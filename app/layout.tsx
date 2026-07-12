@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
 import {
   Archivo,
+  Cormorant_Garamond,
   EB_Garamond,
+  Italiana,
   Libre_Caslon_Text,
-  Mr_Dafoe,
   Pinyon_Script,
   Herr_Von_Muellerhoff,
-  Source_Serif_4,
+  Yellowtail,
 } from "next/font/google"
 import "./globals.css"
 
@@ -23,18 +24,24 @@ const libreCaslon = Libre_Caslon_Text({
   style: ["normal", "italic"],
 })
 
-const sourceSerif = Source_Serif_4({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-serif-two",
-  weight: ["400", "600"],
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
 })
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
   variable: "--font-serif-three",
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
+})
+
+const italiana = Italiana({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: "400",
 })
 
 const pinyon = Pinyon_Script({
@@ -49,7 +56,7 @@ const herrVon = Herr_Von_Muellerhoff({
   weight: "400",
 })
 
-const mrDafoe = Mr_Dafoe({
+const yellowtail = Yellowtail({
   subsets: ["latin"],
   variable: "--font-script-b",
   weight: "400",
@@ -69,7 +76,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${sourceSerif.variable} ${ebGaramond.variable} ${pinyon.variable} ${herrVon.variable} ${mrDafoe.variable}`}
+      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${yellowtail.variable}`}
     >
       <body className="font-sans">{children}</body>
     </html>

@@ -117,7 +117,9 @@ export function WorldThree() {
                   {String(ROOM_CLASSES.length).padStart(2, "0")}
                   {" )"}
                 </p>
-                <h2 className="font-serif-three text-4xl md:text-[40px]">{room.name}</h2>
+                <h2 className="font-serif-three text-[28px] font-medium md:text-[32px]">
+                  {room.name}
+                </h2>
                 {room.callout ? (
                   <p className="font-serif-three text-[15px] italic text-wine">
                     {room.callout}
@@ -138,11 +140,11 @@ export function WorldThree() {
                   </li>
                 ))}
               </ul>
-              {/* Slash-line spec — menu ref */}
-              <p className="font-sans text-[11px] tracking-[0.22em] uppercase text-ink/60">
+              {/* Slash-line spec — weight, not caps */}
+              <p className="font-serif-three text-[14px] font-semibold tracking-wide text-ink/75">
                 {room.bed} / sleeps {room.sleeps} / {room.rate.toLowerCase()}
               </p>
-              <span className="self-start border border-ink px-6 py-3 font-serif-three text-[12px] tracking-[0.2em] uppercase">
+              <span className="self-start border border-ink px-6 py-2.5 font-serif-three text-[14px] font-medium tracking-wide">
                 Book {room.name}
               </span>
             </div>
@@ -168,13 +170,13 @@ export function WorldThree() {
                 role="row"
                 className="grid grid-cols-12 gap-4 pb-2 md:gap-8"
               >
-                <span role="columnheader" className="col-span-5 font-sans text-[10px] tracking-[0.2em] uppercase text-wine md:col-span-4">
+                <span role="columnheader" className="col-span-5 font-serif-three text-[13px] font-semibold text-wine md:col-span-4">
                   The Trip
                 </span>
-                <span role="columnheader" className="col-span-3 font-sans text-[10px] tracking-[0.2em] uppercase text-wine">
+                <span role="columnheader" className="col-span-3 font-serif-three text-[13px] font-semibold text-wine">
                   The Room
                 </span>
-                <span role="columnheader" className="col-span-4 font-sans text-[10px] tracking-[0.2em] uppercase text-wine md:col-span-5">
+                <span role="columnheader" className="col-span-4 font-serif-three text-[13px] font-semibold text-wine md:col-span-5">
                   Why
                 </span>
               </div>
@@ -217,7 +219,7 @@ export function WorldThree() {
             <div className="flex flex-col gap-12">
               {LEDGER.sections.map((section) => (
                 <div key={section.title}>
-                  <p className="pb-2 font-sans text-[10px] tracking-[0.2em] uppercase text-wine">
+                  <p className="pb-2 font-serif-three text-[14px] font-semibold text-wine">
                     {section.title}
                   </p>
                   <dl className="flex flex-col">

@@ -106,7 +106,7 @@ export function WorldTwo() {
                       {room.bed} / sleeps {room.sleeps} / {room.sqft}
                     </p>
                   </div>
-                  <p className="max-w-md font-serif-two text-[17px] leading-relaxed text-ink/85">
+                  <p className="max-w-md font-serif-two text-[15px] leading-relaxed text-ink/85">
                     {room.description}
                   </p>
                   {/* Receipt-style hairline rows — 16's Donica/receipt refs */}
@@ -114,16 +114,16 @@ export function WorldTwo() {
                     {room.features.slice(0, 4).map((f) => (
                       <li
                         key={f}
-                        className="border-t border-ink/15 py-2.5 font-serif-two text-[14px] text-ink/80"
+                        className="border-t border-ink/15 py-2 font-serif-two text-[13px] text-ink/80"
                       >
                         {f}
                       </li>
                     ))}
                   </ul>
                   {/* Script mixed in — mid-line switch inside a real sentence */}
-                  <p className="font-serif-two text-[16px] text-ink/85">
+                  <p className="font-serif-two text-[15px] text-ink/85">
                     Rooms{" "}
-                    <span className="mx-2 font-script-b text-maroon text-[1.4em] leading-none">
+                    <span className="mx-1 font-script-b text-maroon text-[1.3em] leading-none">
                       from {room.rate.replace("From ", "").replace(" off-peak", "")}
                     </span>{" "}
                     a night.
@@ -156,7 +156,7 @@ export function WorldTwo() {
                   <p className="font-sans text-[11px] tracking-[0.22em] uppercase text-maroon">
                     {m.room}
                   </p>
-                  <p className="max-w-sm font-serif-two text-[14px] leading-relaxed text-ink/70">
+                  <p className="max-w-sm font-serif-two text-[13px] leading-relaxed text-ink/70">
                     {m.why}
                   </p>
                 </div>

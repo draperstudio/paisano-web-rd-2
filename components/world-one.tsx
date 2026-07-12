@@ -61,7 +61,7 @@ export function WorldOne() {
           <div className="mb-20 flex flex-col items-center gap-3 text-center md:mb-28">
             <h1
               id="w1-rooms"
-              className="font-serif text-[22px] tracking-[0.28em] uppercase md:text-[26px]"
+              className="font-display text-[24px] tracking-[0.3em] uppercase md:text-[28px]"
             >
               The Rooms
             </h1>
@@ -103,10 +103,10 @@ export function WorldOne() {
                     {String(i + 1).padStart(2, "0")}
                     {" )"}
                   </p>
-                  <h2 className="font-serif text-[26px] tracking-[0.12em] uppercase md:text-[30px]">
+                  <h2 className="font-display text-[26px] tracking-[0.16em] uppercase md:text-[30px]">
                     {room.name}
                   </h2>
-                  <p className="max-w-sm font-serif text-[16px] leading-relaxed text-ink/80">
+                  <p className="max-w-sm font-serif text-[14px] leading-relaxed text-ink/80">
                     {room.description}
                   </p>
                   {/* Slash-line details — 16's menu ref pattern */}
@@ -134,7 +134,7 @@ export function WorldOne() {
           <div className="mx-auto max-w-3xl">
             <div className="mb-16 flex items-baseline justify-center gap-4">
               <span className="font-serif text-[13px] text-cream/60">{"( 01 )"}</span>
-              <h2 id="w1-matcher" className="font-serif text-4xl md:text-5xl">
+              <h2 id="w1-matcher" className="font-display text-3xl md:text-4xl">
                 Which room for which trip
               </h2>
             </div>
@@ -159,8 +159,8 @@ export function WorldOne() {
                   <div
                     className={`flex flex-col gap-2 ${i % 2 === 1 ? "md:text-right md:items-end" : ""}`}
                   >
-                    <h3 className="font-serif text-xl text-balance md:text-2xl">{m.trip}</h3>
-                    <p className="max-w-xs font-sans text-[14px] leading-relaxed text-cream/85">
+                    <h3 className="font-display text-xl text-balance md:text-2xl">{m.trip}</h3>
+                    <p className="max-w-xs font-sans text-[12.5px] leading-relaxed text-cream/85">
                       {m.room}. {m.why}
                     </p>
                   </div>
