@@ -38,8 +38,10 @@ export function Preloader({ lines, groundClass, kicker, onDone }: PreloaderProps
             {line.text}
           </div>
         ))}
+        {/* Kicker sits inside the composition, upper-left third — like the
+            ref's "OUTUBRO 2025" floating within the giant script */}
         {kicker ? (
-          <div className="preloader-word preloader-word-3 absolute bottom-10 left-10 font-sans text-[11px] tracking-[0.35em] uppercase opacity-80">
+          <div className="preloader-word preloader-word-3 absolute bottom-[14%] left-[8%] font-sans text-[12px] tracking-[0.3em] uppercase">
             {kicker}
           </div>
         ) : null}

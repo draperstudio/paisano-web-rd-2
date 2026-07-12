@@ -200,36 +200,42 @@ export const MATCHER_TRIPS = [
     detail: "Passing through on 90, in late, out by ten.",
     room: "Queen Historic",
     why: "The most basic room in the house, courthouse out the window. From $170.",
+    image: "facadeEntrance",
   },
   {
     trip: "The long Chinati weekend",
     detail: "Three nights, two people, the full circuit.",
     room: "Junior Suite or 1BR Suite",
     why: "A sitting area to come back to. Suites from $230 midweek.",
+    image: "lobbySeating",
   },
   {
     trip: "The evening-outside people",
     detail: "Drinks on your own patio, fire going.",
     room: "Mezzanine Patio or Courtyard Patio",
     why: "Private walled patio with an outdoor fireplace, or a king over the courtyard.",
+    image: "courtyardFountain",
   },
   {
     trip: "Four people, one room",
     detail: "Two couples or a family, keeping it together.",
     room: "2 Queen Historic",
     why: "Two queens, sleeps four, every room takes a rollaway.",
+    image: "renderBedroom",
   },
   {
     trip: "The occasion",
     detail: "The anniversary, the proposal, the birthday that matters.",
     room: "Rock Hudson Suite",
     why: "Rooftop terrace, brick fireplace, one room in the hotel. $345 off-peak.",
+    image: "marfaStreet",
   },
   {
     trip: "Traveling with the dog",
     detail: "Any of it, plus a dog.",
     room: "Any class",
     why: "Dogs welcome across the hotel. $40 a night, bed and bowls in the room.",
+    image: "lobbyLoungeArch",
   },
 ] as const
 

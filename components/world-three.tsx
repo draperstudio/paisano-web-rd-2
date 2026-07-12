@@ -2,12 +2,11 @@
 
 /* WORLD THREE — Scenario A2
    Logo: current neon-sign mark, untouched.
-   Preloader: Herr Von Muellerhoff — a thin, fast, pen-drawn script; the
-   second "deliberately far" candidate, opposite pole from Pinyon's formal
-   engraver's roundhand. Maroon ground.
-   Room pages: Bowery-structure treatment — type-to-type tab row, features
-   and amenities as designed lists. Serif: EB Garamond.
-   Ledger: full-width tabular, in-line section breaks (band 16's other ref).
+   Preloader: Herr Von Muellerhoff — thin pen-drawn script, the second
+   "deliberately far" pole. Wine ground, single word bleeding the frame.
+   Rooms: Bowery structure (type-to-type tab row) with menu-ref detail
+   styling. Matcher + Ledger: Donica table — tiny labels once in a header
+   row, serif rows over full-width hairlines. No caps chips in rows.
 */
 
 import { useState } from "react"
@@ -30,48 +29,48 @@ export function WorldThree() {
           lines={[
             {
               text: "Paisano",
-              className: "font-script-a2 text-[30vw] pl-[4vw]",
+              className: "font-script-a2 text-[44vw] -ml-[10vw] -my-[8vw]",
             },
           ]}
           onDone={() => setLoaded(true)}
         />
       )}
 
-      <header className="flex items-center justify-between border-b border-ink/10 px-6 py-4 md:px-10">
+      <header className="flex items-center justify-between border-b border-ink/15 px-6 py-5 md:px-12">
         <CurrentMark className="h-6 md:h-7" />
-        <nav aria-label="Main" className="flex items-center gap-6">
-          <span className="hidden font-sans text-[11px] tracking-[0.25em] uppercase text-stone md:inline">
+        <nav aria-label="Main" className="flex items-baseline gap-8">
+          <span className="hidden font-serif-three text-[13px] tracking-[0.18em] uppercase text-ink/70 md:inline">
             Rooms
           </span>
-          <span className="hidden font-sans text-[11px] tracking-[0.25em] uppercase text-stone md:inline">
+          <span className="hidden font-serif-three text-[13px] tracking-[0.18em] uppercase text-ink/70 md:inline">
             Marfa
           </span>
-          <span className="border border-wine px-4 py-2 font-sans text-[11px] tracking-[0.25em] uppercase text-wine">
-            Book Now
+          <span className="border border-ink/50 px-4 py-2 font-serif-three text-[12px] tracking-[0.2em] uppercase">
+            Book
           </span>
         </nav>
       </header>
 
       <main>
         {/* ROOM PAGES — Bowery structure: type-to-type tab row + detail */}
-        <section aria-labelledby="w3-rooms" className="py-16 md:py-20">
-          <div className="mb-10 px-6 md:px-10">
-            <p className="mb-3 font-sans text-[11px] tracking-[0.35em] uppercase text-stone">
-              The Rooms — 42 rooms, nine classes
-            </p>
+        <section aria-labelledby="w3-rooms" className="py-20 md:py-24">
+          <div className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 px-6 text-center">
             <h1
               id="w3-rooms"
-              className="font-serif-three text-4xl leading-tight text-balance md:text-5xl"
+              className="font-serif-three text-[22px] tracking-[0.24em] uppercase md:text-[26px]"
             >
-              Pick a class. Everything true about it is here.
+              The Rooms
             </h1>
+            <p className="font-serif-three text-[15px] italic text-ink/60">
+              nine classes, everything true about each
+            </p>
           </div>
 
-          {/* type-to-type tab row */}
+          {/* type-to-type tab row — the one thing borrowed from Bowery */}
           <div
             role="tablist"
             aria-label="Room classes"
-            className="flex gap-6 overflow-x-auto border-y border-ink/15 px-6 md:px-10"
+            className="flex justify-start gap-7 overflow-x-auto border-y border-ink/15 px-6 md:justify-center md:px-12"
           >
             {ROOM_CLASSES.map((r, i) => (
               <button
@@ -79,10 +78,10 @@ export function WorldThree() {
                 role="tab"
                 aria-selected={activeRoom === i}
                 onClick={() => setActiveRoom(i)}
-                className={`shrink-0 border-b-2 py-4 font-sans text-[11px] tracking-[0.2em] uppercase transition-colors ${
+                className={`shrink-0 border-b py-4 font-serif-three text-[13px] tracking-[0.14em] uppercase transition-colors ${
                   activeRoom === i
-                    ? "border-wine text-wine"
-                    : "border-transparent text-stone hover:text-ink"
+                    ? "border-ink text-ink"
+                    : "border-transparent text-ink/45 hover:text-ink"
                 }`}
               >
                 {r.name}
@@ -91,149 +90,159 @@ export function WorldThree() {
           </div>
 
           {/* detail page for the active class */}
-          <div className="grid grid-cols-1 gap-10 px-6 pt-12 md:grid-cols-12 md:px-10">
-            <div className="md:col-span-7">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-6 pt-14 md:grid-cols-12 md:px-10">
+            <figure className="flex flex-col gap-3 md:col-span-7">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={MEDIA[room.image as keyof typeof MEDIA]}
                   alt={`${room.name} room`}
                   fill
                   className="object-cover"
-                  sizes="(min-width: 768px) 58vw, 100vw"
+                  sizes="(min-width: 768px) 55vw, 100vw"
                 />
-                {room.imageLabel ? (
-                  <span className="absolute bottom-3 left-3 bg-cream/90 px-2 py-1 font-sans text-[10px] tracking-[0.2em] uppercase text-stone">
-                    {room.imageLabel}
-                  </span>
-                ) : null}
               </div>
-            </div>
+              <figcaption className="text-center font-serif-three text-[12px] italic text-ink/55">
+                {room.imageLabel
+                  ? `${room.name} — ${room.imageLabel.toLowerCase()}`
+                  : `${room.name}, Marfa, TX`}
+              </figcaption>
+            </figure>
+
             <div className="flex flex-col gap-7 md:col-span-5">
-              <div>
-                <h2 className="font-serif-three text-4xl md:text-5xl">{room.name}</h2>
+              <div className="flex flex-col gap-2">
+                <p className="font-serif-three text-[12px] text-ink/50">
+                  {"( "}
+                  {String(activeRoom + 1).padStart(2, "0")}
+                  {" of "}
+                  {String(ROOM_CLASSES.length).padStart(2, "0")}
+                  {" )"}
+                </p>
+                <h2 className="font-serif-three text-4xl md:text-[40px]">{room.name}</h2>
                 {room.callout ? (
-                  <p className="mt-2 font-serif-three text-base italic text-wine">
+                  <p className="font-serif-three text-[15px] italic text-wine">
                     {room.callout}
                   </p>
                 ) : null}
               </div>
-              <p className="font-serif-three text-lg leading-relaxed text-ink/85">
+              <p className="font-serif-three text-[17px] leading-relaxed text-ink/85">
                 {room.description}
               </p>
-              <div>
-                <h3 className="mb-3 font-sans text-[11px] tracking-[0.35em] uppercase text-stone">
-                  Features
-                </h3>
-                <ul className="flex flex-col">
-                  {room.features.map((f) => (
-                    <li
-                      key={f}
-                      className="border-t border-ink/15 py-2.5 font-serif-three text-sm"
-                    >
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="grid grid-cols-4 border-y border-ink/15 py-4">
-                {[
-                  ["Bed", room.bed],
-                  ["Rooms", String(room.rooms)],
-                  ["Sleeps", room.sleeps],
-                  ["Rate", room.rate],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-stone">
-                      {label}
-                    </span>
-                    <span className="font-serif-three text-sm">{value}</span>
-                  </div>
+              {/* Receipt hairline rows */}
+              <ul className="flex flex-col">
+                {room.features.map((f) => (
+                  <li
+                    key={f}
+                    className="border-t border-ink/15 py-2.5 font-serif-three text-[14px] text-ink/80"
+                  >
+                    {f}
+                  </li>
                 ))}
-              </div>
-              <span className="self-start bg-wine px-6 py-3 font-sans text-[11px] tracking-[0.25em] uppercase text-cream">
+              </ul>
+              {/* Slash-line spec — menu ref */}
+              <p className="font-sans text-[11px] tracking-[0.22em] uppercase text-ink/60">
+                {room.bed} / sleeps {room.sleeps} / {room.rate.toLowerCase()}
+              </p>
+              <span className="self-start border border-ink px-6 py-3 font-serif-three text-[12px] tracking-[0.2em] uppercase">
                 Book {room.name}
               </span>
             </div>
           </div>
         </section>
 
-        {/* WHICH ROOM FOR WHICH TRIP — index rows */}
+        {/* WHICH ROOM FOR WHICH TRIP — Donica table: labels once, serif rows,
+            full-width hairlines, no caps chips */}
         <section
           aria-labelledby="w3-matcher"
-          className="border-t border-ink/10 px-6 py-16 md:px-10 md:py-24"
+          className="border-t border-ink/15 px-6 py-20 md:px-12 md:py-28"
         >
-          <div className="mb-12">
-            <p className="mb-3 font-sans text-[11px] tracking-[0.35em] uppercase text-stone">
-              Which Room for Which Trip
-            </p>
-            <h2 id="w3-matcher" className="font-serif-three text-3xl text-balance md:text-4xl">
-              The trip decides.
+          <div className="mx-auto max-w-4xl">
+            <h2
+              id="w3-matcher"
+              className="mb-14 font-serif-three text-3xl leading-snug text-balance md:text-4xl"
+            >
+              Start from the trip, and the room follows.
             </h2>
-          </div>
-          <div className="flex flex-col">
-            {MATCHER_TRIPS.map((m, i) => (
+
+            <div role="table" aria-label="Which room for which trip">
               <div
-                key={m.trip}
-                className="grid grid-cols-1 items-baseline gap-2 border-t border-ink/15 py-5 md:grid-cols-12 md:gap-6"
+                role="row"
+                className="grid grid-cols-12 gap-4 pb-2 md:gap-8"
               >
-                <span className="font-serif-three text-sm italic text-stone md:col-span-1">
-                  {String(i + 1).padStart(2, "0")}
+                <span role="columnheader" className="col-span-5 font-sans text-[10px] tracking-[0.2em] uppercase text-wine md:col-span-4">
+                  The Trip
                 </span>
-                <h3 className="font-serif-three text-xl md:col-span-4">{m.trip}</h3>
-                <p className="font-sans text-[11px] tracking-[0.2em] uppercase text-wine md:col-span-3">
-                  {m.room}
-                </p>
-                <p className="font-serif-three text-sm leading-relaxed text-ink/75 md:col-span-4">
-                  {m.why}
-                </p>
+                <span role="columnheader" className="col-span-3 font-sans text-[10px] tracking-[0.2em] uppercase text-wine">
+                  The Room
+                </span>
+                <span role="columnheader" className="col-span-4 font-sans text-[10px] tracking-[0.2em] uppercase text-wine md:col-span-5">
+                  Why
+                </span>
               </div>
-            ))}
+              {MATCHER_TRIPS.map((m) => (
+                <div
+                  key={m.trip}
+                  role="row"
+                  className="grid grid-cols-12 items-baseline gap-4 border-t border-ink/25 py-4 md:gap-8"
+                >
+                  <span role="cell" className="col-span-5 font-serif-three text-[16px] md:col-span-4 md:text-[17px]">
+                    {m.trip}
+                  </span>
+                  <span role="cell" className="col-span-3 font-serif-three text-[15px] italic text-ink/75">
+                    {m.room}
+                  </span>
+                  <span role="cell" className="col-span-4 font-serif-three text-[14px] leading-relaxed text-ink/70 md:col-span-5">
+                    {m.why}
+                  </span>
+                </div>
+              ))}
+              <div className="border-t border-ink/25" aria-hidden="true" />
+            </div>
           </div>
         </section>
 
-        {/* THE LEDGER — full-width tabular with in-line section breaks */}
+        {/* THE LEDGER — Donica table with in-line section breaks */}
         <section
           aria-labelledby="w3-ledger"
-          className="bg-parchment-deep px-6 py-16 md:px-10 md:py-24"
+          className="border-t border-ink/15 px-6 py-20 md:px-12 md:py-28"
         >
-          <div className="mb-10 flex items-baseline justify-between">
-            <h2 id="w3-ledger" className="font-serif-three text-3xl md:text-4xl">
-              The Ledger
-            </h2>
-            <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-stone">
-              Current as of {LEDGER.asOf}
-            </p>
-          </div>
-          <div className="flex flex-col">
-            {LEDGER.sections.map((section) => (
-              <div key={section.title}>
-                <div className="flex items-center gap-4 pt-8 pb-3">
-                  <h3 className="shrink-0 font-sans text-[11px] tracking-[0.35em] uppercase text-wine">
+          <div className="mx-auto max-w-4xl">
+            <div className="mb-14 flex items-baseline justify-between">
+              <h2 id="w3-ledger" className="font-serif-three text-3xl md:text-4xl">
+                The Ledger
+              </h2>
+              <p className="font-serif-three text-[13px] italic text-ink/55">
+                current as of {LEDGER.asOf}
+              </p>
+            </div>
+            <div className="flex flex-col gap-12">
+              {LEDGER.sections.map((section) => (
+                <div key={section.title}>
+                  <p className="pb-2 font-sans text-[10px] tracking-[0.2em] uppercase text-wine">
                     {section.title}
-                  </h3>
-                  <div className="h-px w-full bg-ink/30" aria-hidden="true" />
+                  </p>
+                  <dl className="flex flex-col">
+                    {section.rows.map(([label, value]) => (
+                      <div
+                        key={label}
+                        className="grid grid-cols-1 gap-1 border-t border-ink/25 py-3.5 md:grid-cols-2 md:gap-8"
+                      >
+                        <dt className="font-serif-three text-[16px]">{label}</dt>
+                        <dd className="font-serif-three text-[15px] text-ink/70">
+                          {value}
+                        </dd>
+                      </div>
+                    ))}
+                    <div className="border-t border-ink/25" aria-hidden="true" />
+                  </dl>
                 </div>
-                <dl className="flex flex-col">
-                  {section.rows.map(([label, value]) => (
-                    <div
-                      key={label}
-                      className="grid grid-cols-1 gap-1 border-b border-ink/10 py-2.5 md:grid-cols-2 md:gap-8"
-                    >
-                      <dt className="font-serif-three text-sm">{label}</dt>
-                      <dd className="font-serif-three text-sm text-ink/75 md:text-right">
-                        {value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-ink/10 px-6 py-8 md:px-10">
-        <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-stone">
+      <footer className="border-t border-ink/15 px-6 py-10 text-center md:px-12">
+        <p className="font-serif-three text-[12px] italic text-ink/55">
           Hotel Paisano — 207 N Highland Ave, Marfa, Texas
         </p>
       </footer>
