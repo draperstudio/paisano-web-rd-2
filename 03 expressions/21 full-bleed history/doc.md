@@ -14,7 +14,7 @@ A full-bleed treatment that survives despite the brand-wide preference for tight
 ## Control for (locked)
 
 - **Grid (containment):** edge to edge · full bleed, deliberately · tried against the brand's held-margin default, "je ne sais quoi and tasteful"
-- **Subject:** history content first · "maybe I like it for the history one in particular" (audit fix: an earlier draft confined full bleed to history — Buck's "I want to try some of this full bleed maybe" is broader; where else it's tried stays open, weighed against the held-margin preference in 03/08/14/20)
+- **Subject:** history content first · "maybe I like it for the history one in particular" (audit fix: an earlier draft confined full bleed to history — Buck's "I want to try some of this full bleed maybe" is broader; where else it's tried stays open)
 
 ## Leave open (variation space)
 
