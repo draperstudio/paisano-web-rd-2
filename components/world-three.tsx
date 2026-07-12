@@ -241,8 +241,10 @@ export function WorldThree({ skipPreloader = false }: { skipPreloader?: boolean 
                 className="border-t border-dashed border-ink/40"
                 aria-hidden="true"
               />
+              {/* CALL: "front desk, any hour" removed — 24-hour desk is a finished-state
+                  fact per the dossier's hard-truth note; current hours unconfirmed. */}
               <p className="font-serif-three text-[15px] text-ink/70">
-                Front desk, any hour — 207 N Highland Ave
+                207 N Highland Ave, Marfa, Texas
               </p>
             </div>
           </div>

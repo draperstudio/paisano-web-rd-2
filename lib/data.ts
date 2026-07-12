@@ -1,19 +1,35 @@
-// All facts from 06 knowledge/07 Room Types and Catalog (7.12.26) and 06 dossier.
-// Honesty guards: renders labeled, no Juliet balconies marketed, current nine classes only.
+// All facts from 06 knowledge/07 Room Types and Catalog (7.12.26) and the 06 dossier (7.9.26).
+// Reconciled 7.12.26 (agent, unattended run): nine classes in catalog order (2BR Suite was
+// missing), current-state room imagery swapped from renders to current photography per the
+// settled imagery rule, and three hard-truth fixes (24-hour desk, pet bed-and-bowls, and
+// "minimum stay: none" were planned/unsourced facts stated as current).
+// Honesty guards: renders labeled and reserved for future-facing pieces, no Juliet balconies
+// marketed, current nine classes only, no "six types" as current fact.
 
 export const MEDIA = {
+  // Current-room photography — 04 media/current-rooms-improved (doctored-but-accurate, 7.12.26).
+  // CALL: all three shots are the same room (shot01, a king room). Classes whose bed/type
+  // doesn't match carry an honest "a king room shown" label until per-class photography exists.
+  currentBedElevation:
+    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/2e97afe2bab034e29d0111c91aab6711cdeef7eb112eac0e339a01be89b75d3a",
+  currentDoorsOnePointR5:
+    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/f9f48012ac8ce6dd2982be27e6edf66ce7f3dd388b5d63f233985a8ee8832ebe",
+  currentDoorsOnePointR6:
+    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/d01698f075643afe3f58d3a0311763a213a63181f304aef1585c7396c415ccea",
+  // Renders — future/rebuild pieces ONLY, never current state (settled 7.12.26)
   renderBedroom:
     "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/85ac447d479a6b7e17d6a049adb9f0aef8c17696cf547e124918a6d88b5cda85",
   renderBathroom:
     "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/c7b1be17786a62696faf2a2f184deeb4b7ac502545c436058eb4453d86bb918b",
-  lobbySeating:
-    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/91390cacd041a372bd3705bd4aa9ac587bb13c5f6c34c8020183658b29aa753a",
   renderCourtyard:
     "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/7456c8f1e94ef0b7eb6e25603dc01c0fd98e59a7e4a4b28f3cb93bb68ebee769",
-  courtyardFountain:
-    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/01e0fb63d2646aeb5a9662c6576754d7564becfbf3f8bd6fad214dbc7162083d",
   renderExterior:
     "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/97cc68bbb873e9da7479000aea12be7b5906fb6157c5ec236b9ae0f04469e24f",
+  // Current property photography
+  lobbySeating:
+    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/91390cacd041a372bd3705bd4aa9ac587bb13c5f6c34c8020183658b29aa753a",
+  courtyardFountain:
+    "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/01e0fb63d2646aeb5a9662c6576754d7564becfbf3f8bd6fad214dbc7162083d",
   facadeEntrance:
     "https://media.withdraper.com/00a47620-f1af-4fee-b1d3-ff7c75ecf745/fb35f5b818cebeb87e926a1c6612014c78f973daf87c0f2cc817193bc2aa2799",
   marfaStreet:
@@ -41,27 +57,8 @@ export type RoomClass = {
   imageLabel?: string
 }
 
+// Nine classes, catalog order, from 06 knowledge/07 (7.12.26).
 export const ROOM_CLASSES: RoomClass[] = [
-  {
-    name: "Queen Historic",
-    code: "QENHIS",
-    bed: "One queen",
-    rooms: 7,
-    sleeps: "2",
-    sqft: "~168 sq ft",
-    rate: "From $170",
-    description:
-      "The most basic type. One queen, European bath with shower only, north-facing courthouse views.",
-    features: [
-      "European bath, shower only",
-      "North-facing courthouse views",
-      "Room 223 is the James Dean Room",
-      "Room 224 shares a courtyard patio with Suite 202",
-    ],
-    callout: "The James Dean Room lives here — room 223.",
-    image: "renderBedroom",
-    imageLabel: "Render — room renovation lands January 2027",
-  },
   {
     name: "Mezzanine Patio",
     code: "MEZPAT",
@@ -79,8 +76,28 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Mezzanine level, rooms 101–111",
       "No rollaway",
     ],
-    image: "renderCourtyard",
-    imageLabel: "Render — room renovation lands January 2027",
+    image: "currentDoorsOnePointR6",
+    imageLabel: "Current photography — a king room shown",
+  },
+  {
+    name: "Queen Historic",
+    code: "QENHIS",
+    bed: "One queen",
+    rooms: 7,
+    sleeps: "2",
+    sqft: "~168 sq ft",
+    rate: "From $170",
+    description:
+      "The most basic type. One queen, European bath with shower only, north-facing courthouse views.",
+    features: [
+      "European bath, shower only",
+      "North-facing courthouse views",
+      "Room 223 is the James Dean Room",
+      "Room 224 shares a courtyard patio with Suite 202",
+    ],
+    callout: "The James Dean Room lives here — room 223.",
+    image: "currentDoorsOnePointR5",
+    imageLabel: "Current photography — a king room shown",
   },
   {
     name: "2 Queen Historic",
@@ -88,7 +105,7 @@ export const ROOM_CLASSES: RoomClass[] = [
     bed: "Two queens",
     rooms: 4,
     sleeps: "4",
-    sqft: "~355 sq ft",
+    sqft: "~355–358 sq ft",
     rate: "From $200",
     description:
       "Two queens, sleeps four, all rooms take a rollaway. Rooms 245 and 247 sit in a wider bay; room 117 is mezzanine level with a sun porch.",
@@ -98,8 +115,8 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Room 117 has a sun porch",
       "Wider bay in rooms 245/247",
     ],
-    image: "renderBedroom",
-    imageLabel: "Render — room renovation lands January 2027",
+    image: "currentBedElevation",
+    imageLabel: "Current photography — a king room shown",
   },
   {
     name: "Deluxe Historic",
@@ -116,8 +133,8 @@ export const ROOM_CLASSES: RoomClass[] = [
       "East wing or courtyard side",
       "The largest class in the hotel — twelve rooms",
     ],
-    image: "renderBathroom",
-    imageLabel: "Render — room renovation lands January 2027",
+    image: "currentBedElevation",
+    imageLabel: "Current photography",
   },
   {
     name: "Junior Suite",
@@ -134,7 +151,8 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Balconies over pool or courtyard, varies by room",
       "Sizes vary widely",
     ],
-    image: "lobbySeating",
+    image: "currentDoorsOnePointR5",
+    imageLabel: "Current photography",
   },
   {
     name: "Courtyard Patio",
@@ -150,7 +168,8 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Private patio balcony over the courtyard",
       "Rooms 228 and 230 only",
     ],
-    image: "courtyardFountain",
+    image: "currentDoorsOnePointR6",
+    imageLabel: "Current photography",
   },
   {
     name: "1BR Suite",
@@ -169,7 +188,30 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Pool-overlook suites: 203 and 205",
     ],
     callout: "The Elizabeth Taylor Suite — room 212.",
-    image: "lobbyLoungeArch",
+    image: "currentDoorsOnePointR5",
+    imageLabel: "Current photography — a king room shown",
+  },
+  {
+    // CALL: class was missing from the 7.12 build entirely — added from the catalog.
+    // Rate is the dossier's suites-midweek floor; no per-class rate is on record.
+    name: "2BR Suite",
+    code: "2BRSTE",
+    bed: "King + queen",
+    rooms: 1,
+    sleeps: "4",
+    sqft: "~575 sq ft",
+    rate: "From $230",
+    description:
+      "One room: 220, the Dennis Hopper Suite. Two bedrooms, two bathrooms — the only two-bedroom in the house.",
+    features: [
+      "Two bedrooms",
+      "Two bathrooms",
+      "One room: 220",
+      "Sleeps four",
+    ],
+    callout: "The Dennis Hopper Suite — room 220.",
+    image: "currentBedElevation",
+    imageLabel: "Current photography — a king room shown",
   },
   {
     name: "Rock Hudson Suite",
@@ -189,8 +231,8 @@ export const ROOM_CLASSES: RoomClass[] = [
       "Freestanding tub",
     ],
     callout: "The signature suite. One room: 211.",
-    image: "renderExterior",
-    imageLabel: "Render — renovation in progress",
+    image: "currentDoorsOnePointR5",
+    imageLabel: "Current photography — a standard king room, not the suite",
   },
 ]
 
@@ -221,7 +263,7 @@ export const MATCHER_TRIPS = [
     detail: "Two couples or a family, keeping it together.",
     room: "2 Queen Historic",
     why: "Two queens, sleeps four, every room takes a rollaway.",
-    image: "renderBedroom",
+    image: "currentBedElevation",
   },
   {
     trip: "The occasion",
@@ -234,7 +276,7 @@ export const MATCHER_TRIPS = [
     trip: "Traveling with the dog",
     detail: "Any of it, plus a dog.",
     room: "Any class",
-    why: "Dogs welcome across the hotel. $40 a night, bed and bowls in the room.",
+    why: "Dogs welcome, $40 a night.",
     image: "lobbyLoungeArch",
   },
 ] as const
@@ -247,8 +289,8 @@ export const LEDGER = {
       rows: [
         ["Rooms", "42, across nine classes"],
         ["Address", "207 N Highland Ave, Marfa, Texas"],
-        ["Front desk", "24 hours"],
         ["Check-in", "3:00 PM"],
+        ["Largest room sleeps", "5"],
         ["Named rooms", "James Dean 223 · Elizabeth Taylor 212 · Dennis Hopper 220 · Rock Hudson 211"],
       ],
     },
@@ -266,8 +308,7 @@ export const LEDGER = {
     {
       title: "Policies",
       rows: [
-        ["Dogs", "Welcome, $40 a night. Bed and bowls in the room."],
-        ["Minimum stay", "None. One night is a stay."],
+        ["Dogs", "Welcome, $40 a night"],
         ["Groups", "Five rooms and up. Four or fewer book as a regular reservation."],
         ["Rollaways", "Available in most classes. Mezzanine Patio takes none."],
       ],

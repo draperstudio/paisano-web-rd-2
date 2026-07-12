@@ -1,6 +1,6 @@
 # 16 tariff tables — expressions doc
 
-**Version:** V1 · 7.12.26 · created from the board pass (Buck's board comment, worked by AI — Buck QAs)
+**Version:** V2 · 7.12.26 · decision 7 from Buck's 7.12 review written in: the receipt register is the locked treatment for ledger/tariff data, and sans inside tables is a hard kill (agent call on the write-up, review; the decision itself is Buck's, locked). V1: created from the board pass (Buck's board comment, worked by AI — Buck QAs)
 **Type:** composition concept — data presented as cards and tables in the brand's editorial register (the tariff-card direction).
 
 ## What it is
