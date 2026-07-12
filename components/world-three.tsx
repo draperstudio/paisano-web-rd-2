@@ -29,7 +29,7 @@ export function WorldThree() {
           lines={[
             {
               text: "Paisano",
-              className: "font-script-a2 text-[44vw] -ml-[10vw] -my-[8vw]",
+              className: "font-script-a2 text-[40vw] ml-[8vw] -my-[8vw]",
             },
           ]}
           onDone={() => setLoaded(true)}
