@@ -13,9 +13,9 @@ A section where the brand explains something, with a script face mixed into norm
 
 ## Control for (locked)
 
-- **Type (voice-switching):** script face mixed within normal running text, mid-line register changes — the defining move.
-- **Subject:** an explanatory section — the brand talking, a note-from-the-house register. (What it explains is a content-concept question, open.)
-- **Texture tie:** if the preloader texture (01 + 28) happens, this section is where the texture comes back — a deliberate echo across the page.
+- **Type (voice-switching):** script face mixed within normal running text · mid-line register change · the defining move
+- **Subject:** an explanatory section · "a section where we explain something" · what it explains is unknown, even to Buck ("I don't know what we would explain in this type of section but I'd like it a lot")
+- **Texture tie (descriptive label, not a schema control):** the texture (28) comes back here if the preloader gets it · deliberate echo across the page
 
 ## Leave open (variation space)
 

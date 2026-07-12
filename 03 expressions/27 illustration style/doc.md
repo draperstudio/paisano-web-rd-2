@@ -5,7 +5,7 @@
 
 ## What it is
 
-The brand's illustration style as its own effort — the line quality every illustration (building, map, icons) should share. Three candidates sit in the band: the floor plan (too thick), the building (fine, maybe too fine and not abstract enough), and the Horsey reference, which is the direction.
+The brand's illustration style as its own effort — the line quality every illustration (building, map, icons) should share. Three candidates sit in the band: the floor plan (too thick), the building (fine, maybe too fine and not abstract enough), and the Horsey reference, which is the lean — "maybe moving more towards this Horsey reference one."
 
 ## What Buck likes / wants
 
@@ -13,9 +13,9 @@ The brand's illustration style as its own effort — the line quality every illu
 
 ## Control for (locked) — graphic controls
 
-- **Linework (weight):** between the poles — lighter than the floor plan's thickness, more present than the building's fineness.
-- **Linework (character):** the Horsey quality — spacing and disconnection between lines; gaps that let the drawing breathe rather than continuous contour.
-- **Complexity (form):** more abstract than the building illustration — boiled down further, not a faithful rendering.
+- **Linework (weight):** lighter than the floor plan ("too thick" — that one's unambiguous) · the building's "maybe a little bit too fine" is hedged and may mean weight or detail level — read both ways when iterating
+- **Linework (character):** the Horsey quality ("maybe" — a lean, not a verdict) · spacing and disconnection between lines · broken contour, gaps that breathe · not continuous outline
+- **Form (complexity):** more abstract than the building illustration · boiled down · not a faithful rendering
 
 ## Leave open (variation space)
 

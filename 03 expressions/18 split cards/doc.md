@@ -13,13 +13,13 @@ A section built from two cards: stacked type in one, an image in the other. It e
 
 ## Control for (locked)
 
-- **Zones:** two cards — type card + image card, side by side.
-- **Space (the diagnosis):** vertical padding/margins should equal the horizontal — the optical evenness around and between the cards is named as the thing to fix.
-- **Color (background):** light — "I don't like the dark background."
+- **Zones:** two cards · stacked type in one, image in the other · side by side
+- **Color (background):** not dark ("I don't like the dark background" — that's the whole color statement; "light" is not locked)
 
 ## Leave open (variation space)
 
 - Whether the cards read as separate or joined — genuinely unresolved: "I don't exactly love that the cards are separate but also maybe it's okay." Cycle both.
+- **Buck's spacing hypothesis, to test (not locked — he hedged it):** "I think maybe it's because the padding and margin above are not equal to what's there side to side horizontally." Try equalizing vertical to horizontal and see.
 - Everything inside the cards — "it's not that I'm totally in love with what's inside of the card, like the actual typefaces and casing and sizing." Type is open (brand-wide).
 - Which side the image takes · image selection (media at production).
 

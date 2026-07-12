@@ -13,9 +13,9 @@ The depth of the space: "there's so much shit you could do with microtext and th
 
 ## Control for (locked)
 
-- **Hierarchy:** microtext as its own layer (or layers) in the ranking — levels within the micro scale itself, not one uniform small caption size.
-- **Meaning:** every deployment has a point — the text carries something real, never decorative filler. (Facts source from 06 knowledge at production.)
-- **The standard:** the numeral-grid reference crops — same refs as 09, read at detail scale.
+- **Hierarchy:** microtext as its own layer(s) in the ranking · levels within the micro scale · layered, not one uniform caption size
+- **Meaning (borrowed from the graphic controls — no composition equivalent; flagged):** every deployment has a point · carries something real · never random, never meaningless
+- **The standard (descriptive label, not a schema control):** the Roman-numeral reference crops · same refs as 09, read at detail scale
 
 ## Leave open (variation space)
 
@@ -26,7 +26,7 @@ The depth of the space: "there's so much shit you could do with microtext and th
 ## Negative
 
 - Random, meaningless microtext. That's the one hard kill in the band.
-- The deck slide as a standard — "it was very quick and we just threw it together"; recognize it, don't imitate it.
+- The deck slide as a standard — Buck: "which I thought was fine but it was very quick and we just threw it together... I like the references better." Fine, not the bar; the refs are the bar.
 
 ## Open questions
 

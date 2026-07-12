@@ -13,14 +13,17 @@ Footers. Two directions sit in the band: one with the reserve action centered, w
 
 ## Control for (locked)
 
-- **Subject:** the footer.
-- **CTA:** the reserve action is the footer's lead move — the centered-reserve direction makes it ceremonial.
-- **Brand:** no solo "Paisano" in the footer — "I don't like the type being at the paisano. Like I said we don't do the paisano really." Wordmark stays whole.
+- **Subject:** the footer
+- **Brand:** no solo "Paisano" in the footer · wordmark stays whole ("we don't do the paisano really")
+
+(Audit fix: an earlier draft locked reserve as the footer's lead CTA with a "ceremonial" read — unsupported. Buck called the centered-reserve one "interesting" and possibly "elegant," then handed the whole thing off: "figure it out." CTA stays open, below.)
 
 ## Leave open (variation space)
 
-- The two directions themselves — centered-reserve vs. left/right balanced; explicitly handed off ("figure it out"). Rip variants of both.
+- The two directions themselves — centered-reserve ("interesting... I think it can be elegant") vs. left/right balanced ("more normal"); explicitly handed off ("figure it out"). Rip variants of both.
+- The CTA — whether reserve leads the footer and how hard, open.
 - Everything inside: link structure, microtext presence (12/14 are natural passengers here), type, space.
+- One garbled feedback line not carried into this doc, flagged rather than interpreted: "I couldn't see this as an intersection but the footer..." (verbatim in feedback.md).
 
 ## Negative
 

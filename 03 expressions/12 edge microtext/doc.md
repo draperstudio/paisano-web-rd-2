@@ -13,9 +13,9 @@ The subtlety and the edge-placement, and behind it the whole principle of textua
 
 ## Control for (locked)
 
-- **Zones (placement):** the very top and the very bottom — text pushed to the extremes, above or below the main matter.
-- **Space:** spaced-out nests — the microtext sits apart, airy inside its own cluster; subtlety is the register.
-- **Purpose:** distinct from the general text hierarchy of the composition — it frames rather than ranks.
+- **Zones (placement):** the very top and the very bottom · pushed to the extremes · above or below the main matter · framing text
+- **Space:** spaced-out nests · airy inside its own cluster · subtle · quiet against the composition
+- **Purpose (descriptive label, not a schema control):** frames rather than ranks · a different purpose than the composition's general text hierarchy
 
 ## Leave open (variation space)
 

@@ -38,7 +38,7 @@ Said three-plus times across bands, so recorded once here:
 
 - **"We don't do the Paisano"** — the wordmark keeps "Hotel Paisano" together in standard use. The one sanctioned solo-"Paisano": the preloader script treatment (01), which is deliberately not the wordmark. (bands 1, 2, 22)
 - **No full bleed by default** — tight, thin padding/margins/borders around compositions instead. The one place full bleed may live: 21 full-bleed history, deliberately, and even there "je ne sais quoi and tasteful." (bands 3, 8, 14, 20, 21)
-- **No arbitrary typeface mixing** — "a mix of types... that's kind of whack. We don't do that." Script-in-text (07) is a deliberate exception being explored, not a license. (band 2)
+- **No arbitrary typeface mixing** — "a mix of types... that's kind of whack. We don't do that." Script mixed in (07) is a deliberate exception being explored, not a license. (band 2)
 - **No all-caps + wide-kerning treatment** for normal text or the wordmark. (bands 2, 7, 14, 21)
 - **No line coming off the eyebrow.** (bands 17, 20)
 
@@ -54,6 +54,10 @@ Said three-plus times across bands, so recorded once here:
 - **25–28 got expression folders too** — Buck asked for them in 03 expressions/; they now carry feedback.md, matched refs, and docs written against the graphic controls, while staying mirrored on 05 graphics/to-make.md as the asset efforts.
 - **Board screenshots were pulled into explorations/ and then killed** — Buck: we don't do that with screenshots. explorations/ stays empty until real exports happen; Buck downloads the exploration images himself.
 - **The column differentiation firmed up** (pending Buck's confirm): sections / moves / systems on the left, graphics on the right. Borderlines DECIDED (Buck handed the call to the AI, 7.12): 01 preloader script = a move, the preloader is its first home; 07 script mixed in = a composition carried by a move; 09 roman numerals = a composition that hosts the microtext moves. Buck also killed the first names for these three ("gay as fuck") — renamed to his own words everywhere.
+
+## QA pass (7.12, late)
+
+All 27 docs went through a double QA: (1) a keyword-tightening pass rewriting every locked control as keyword/term/phrase strings, verified against the verbatim feedback; (2) an adversarial audit by three independent agents reading only the files, hunting fabricated quotes, taste-filled locks, missed content, and meaning inversions. ~30 findings confirmed and fixed, each marked "audit fix" inline in the affected doc. The heaviest: band 1's staggered variant misread (the rule is no "The", not no "Hotel" — verified against the exploration frame), the footer's CTA over-locked against Buck's explicit "figure it out," full bleed confined to history harder than Buck said, hedges hardened into locks (map illustration, split-cards spacing, Horsey direction), and invented details killed ("hairline," "tight hand," "seamless tiling," "ceremonial," "note-from-the-house"). Non-schema lock labels are now flagged "(descriptive label, not a schema control)" wherever used. Buck's own QA remains the gate — these passes reduce his review load, they don't replace it.
 
 ## Retrieval flags (couldn't pull, not skipped silently)
 

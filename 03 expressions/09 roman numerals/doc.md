@@ -13,9 +13,9 @@ The references, not the explorations: "I like the references a lot and I want to
 
 ## Control for (locked)
 
-- **Grid (framework):** systematic, visibly organized — the grid discipline of the references is the identity of this expression.
-- **Subject:** ordered editorial content under Roman-numeral sequencing. (Which numeral system ultimately applies is 15 numbering system's brand-wide call — this band is where the Roman-numeral look came from.)
-- **The standard:** the references themselves — explorations are judged by proximity to them. Micro text offsetting, text organization, grid nuance all read against the refs.
+- **Grid (framework):** systematic · visibly organized · grid discipline per the references · the organization IS the identity
+- **Subject:** ordered editorial content · Roman-numeral sequencing (final numeral style is 15's brand-wide call — this band is where the Roman look came from)
+- **The standard (descriptive label, not a schema control):** the references · proximity-to-refs is the judging rule · micro text offsetting, text organization, grid nuance all read against them
 
 ## Leave open (variation space)
 

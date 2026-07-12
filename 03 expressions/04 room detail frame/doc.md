@@ -13,10 +13,10 @@ A bordered, centered composition for detail content — "this is like a room det
 
 ## Control for (locked)
 
-- **Grid (containment + alignment):** held — a visible margin/padding border framing the entire composition; title centered.
-- **Type (size count):** varied — "text of varying sizes, the subtext stuff going on"; a ladder of subtext sizes below the centered title.
-- **Subject:** detail content — room details first; not a hero.
-- **Hierarchy:** centered title leads, varied subtext supports.
+- **Grid (containment + alignment):** held · little margin/padding around the whole border outside · centered title
+- **Type (size count):** varied subtext sizes · a ladder of sizes below the title · "text of varying sizes, the subtext stuff going on"
+- **Subject:** detail content · room details first · not a hero
+- **Hierarchy:** centered title leads · varied subtext supports
 
 ## Leave open (variation space)
 

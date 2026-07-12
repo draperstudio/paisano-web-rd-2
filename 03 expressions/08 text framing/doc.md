@@ -13,9 +13,9 @@ From the high-contrast serif typographic framing reference: text framing the com
 
 ## Control for (locked)
 
-- **Zones:** type frames the composition at top and bottom — the framing lines are structural, not decoration.
-- **Type (scale range + size count):** dramatic differentials across four or more sizes — title, main block, small bits, top/bottom framing text, text over image. The spread between sizes is the point.
-- **Grid (containment):** held — "for sure I would want some border, margin, padding, whatever you would call it." Not full bleed.
+- **Zones:** text framing at top and bottom · framing lines structural, not decoration
+- **Type (scale range + size count):** dramatic differentials · four or more sizes · title / main block / small bits below / top-bottom framing text / text over image · the spread between sizes is the point
+- **Grid (containment):** held · border, margin, padding "for sure" · not full bleed
 
 ## Leave open (variation space)
 

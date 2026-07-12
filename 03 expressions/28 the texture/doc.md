@@ -13,9 +13,9 @@ A real material ground for the brand's surfaces instead of flat color: "Let's ma
 
 ## Control for (locked) — graphic/texture controls
 
-- **Element:** a continuous material — canvas/fabric grain per the references; surface, not a motif pattern.
-- **Color:** rendered in brand color — "our maroon or some other color," not the references' blue/orange. Palette values per 01 settled.
-- **Purpose (spread):** an underlay — it sits beneath type (01's preloader script, 07's section) as ground; must extend/tile without announcing a seam.
+- **Element:** continuous material · canvas / fabric grain per the references · surface, not a motif pattern
+- **Color:** brand color · "our maroon or some other color" · not the references' blue/orange · values per 01 settled
+- **Spread (purpose):** underlay · ground beneath type (01's preloader script, 07's section) (audit fix: "tiles seamlessly, no visible seam" was an earlier draft's import from the control's question list — the reference itself carries "subtle horizontal seam lines"; how it extends is open)
 
 ## Leave open (variation space)
 

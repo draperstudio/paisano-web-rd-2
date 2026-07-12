@@ -13,9 +13,9 @@ The crest itself is acceptable: "that crest is fine. It's not as fucked up." The
 
 ## Control for (locked) — graphic controls
 
-- **The standard:** the references sitting in this band — the crest moves toward their drawing quality.
-- **Technique (hand):** same direction as the wordmark redraw — naturally drawn over digitally manufactured; clean up the edge artifacts.
-- **Subject:** the existing crest — this is a redraw of what exists, not a new mark.
+- **The standard (descriptive label, not a schema control):** the references in this band · move toward their drawing quality — **note: those references are screenshots that didn't match the Rd 1 library, so this folder's refs/ is empty; export them from the board or the lock can't be executed from the folder alone**
+- **Technique (hand):** naturally drawn over digitally manufactured · clean up the edge artifacts (audit fix: "same hand as the wordmark" was locked in an earlier draft — Buck said same *pass*, not same hand; it stays an open question below)
+- **Subject:** the existing crest · a redraw of what exists, not a new mark
 
 ## Leave open (variation space)
 

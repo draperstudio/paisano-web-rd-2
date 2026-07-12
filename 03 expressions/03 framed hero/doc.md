@@ -13,9 +13,9 @@ The site hero, derived nearly straight from the Bowery Hotels hero section refer
 
 ## Control for (locked)
 
-- **Grid (containment):** held — tight, thin padding/margins framing the hero on all sides. Never edge to edge.
-- **Brand:** the actual Hotel Paisano wordmark in the hero — "it obviously should be [using our wordmark]. We don't fuck with the paisano." No stand-in faces.
-- **Subject:** the site hero — the opening section of the page.
+- **Grid (containment):** held · tight thin padding/margins around the outside, all sides · "kind of like Bowery" · never edge to edge
+- **Brand:** the actual Hotel Paisano wordmark in the hero · no stand-in typefaces ("it's not using our wordmark. It obviously should be... it should be using our wordmark, right?") · ("we don't fuck with the paisano" also appears here — in context it reads as the recurring solo-"Paisano"/wordmark rule, not an "unaltered forever" claim; the wordmark's own evolution is 25's territory)
+- **Subject:** the site hero · opening section of the page · Bowery-hero derivation
 
 ## Leave open (variation space)
 

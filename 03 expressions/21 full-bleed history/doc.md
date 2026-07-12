@@ -9,12 +9,12 @@ A full-bleed treatment that survives despite the brand-wide preference for tight
 
 ## What Buck likes
 
-"It's not that bad. I think maybe I like it for the history one in particular if we had a history page or something... I want to try some of this full bleed maybe but got to be je ne sais quoi and tasteful about it." The liked frame is the history one — with the 1940s facade-era imagery.
+"It's not that bad. I think maybe I like it for the history one in particular if we had a history page or something... I want to try some of this full bleed maybe but got to be je ne sais quoi and tasteful about it." Note the shape of that: history is where it landed hardest ("in particular"), but "I want to try some of this full bleed" isn't confined to history — it's a lean, not a fence.
 
 ## Control for (locked)
 
-- **Grid (containment):** edge to edge — deliberately, as the exception that proves the held-margin rule everywhere else.
-- **Subject:** history content — the treatment is licensed by the subject; it is not a general-purpose move.
+- **Grid (containment):** edge to edge · full bleed, deliberately · tried against the brand's held-margin default, "je ne sais quoi and tasteful"
+- **Subject:** history content first · "maybe I like it for the history one in particular" (audit fix: an earlier draft confined full bleed to history — Buck's "I want to try some of this full bleed maybe" is broader; where else it's tried stays open, weighed against the held-margin preference in 03/08/14/20)
 
 ## Leave open (variation space)
 
@@ -23,8 +23,7 @@ A full-bleed treatment that survives despite the brand-wide preference for tight
 
 ## Negative
 
-- The all-caps big-kerning lettering in the sibling exploration: "I'm definitely not talking about the all-caps big big kerning fucking lettering and shit."
-- Full bleed leaking out of this expression into the rest of the brand — it lives here only.
+- The all-caps big-kerning lettering — and it sits inside the liked history frame itself ("HOTEL PAISANO / NINETEEN THIRTY"): "I'm definitely not talking about the all-caps big big kerning fucking lettering and shit but I mean in the history one." What's liked is the full-bleed history treatment, minus that lettering.
 
 ## Open questions
 

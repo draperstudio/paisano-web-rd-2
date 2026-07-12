@@ -13,10 +13,10 @@ The diagnosis: "It feels a little too digital, a little too glossy, a little too
 
 ## Control for (locked) — graphic/lettering controls
 
-- **Letterforms:** the existing sign's letterforms as the base — structure, proportions, and the letter tails preserved; the redraw lives inside them.
-- **Technique (hand):** away from machine-glossy toward naturally drawn — tight hand, the qualities of real lettering; kill the Photoshop-era digital sheen.
-- **Mark type / lockup:** unchanged — this effort does not restructure the mark, it redraws the drawing.
-- **The boundary:** it never becomes one of the elegant scripts. "If we departed that far from the sign, the relationship between the identity and the physical building would break."
+- **Letterforms:** the neon sign's letterforms as the base · overall structure preserved · proportions preserved · letter tails preserved · the redraw lives inside them
+- **Technique (hand):** naturally drawn over machine-glossy · more natural, more fluid, better drawn · kill the digital / glossy / manufactured / Photoshop-era read (audit fix: "tight hand" was an earlier draft's vocabulary pick, unsupported and in tension with "fluid" — the degree of hand is open)
+- **Mark type / lockup:** unchanged · redraw the drawing, don't restructure the mark
+- **The boundary (descriptive label, not a schema control):** never becomes the script · "still clearly feeling like the same sign" · the identity-to-building relationship holds
 
 ## Leave open (variation space)
 

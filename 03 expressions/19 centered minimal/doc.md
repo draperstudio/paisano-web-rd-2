@@ -15,9 +15,9 @@ Thin on record — the band comment gives only "the minimalism of this" and poin
 
 Locked from the reference's own markdown (a sanctioned source per the doc-writer tool), lightly — Buck's words cover almost nothing yet:
 
-- **Space:** sparse — emptiness owns the frame; the negative space is the composition.
-- **Hierarchy:** a single understated word leads; steep but quiet.
-- **Balance:** the lead word sits on the vertical center line with lift (optical over geometric center); two small juxtaposed elements anchor the bottom against the void.
+- **Space:** sparse · emptiness owns the frame · expansive negative space · the space is the composition
+- **Hierarchy:** single understated word leads · steep but quiet · minimalist typographic hierarchy
+- **Balance:** vertical center line with lift · optical over geometric center · two small horizontally juxtaposed elements anchoring the bottom · weighted contrast against the void
 
 ## Leave open (variation space)
 

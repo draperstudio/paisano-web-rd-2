@@ -5,7 +5,7 @@
 
 ## What it is
 
-An image with a second, much smaller image set off beside it — "an image and then a small image over to the right. The small image is like, I don't know, it could be centered or offset. That's not really the point." The pairing itself is the move. The band's references came mostly from the old deck (which "can be [improved]"), with "the Ultimate Luxury" as the main one. The same move surfaced independently in band 1 (the small offset image with micro text, maybe cycling) and band 2's variant rows — this band is its home (cross-ties recorded in those docs).
+An image with a second, much smaller image set off beside it — "an image and then a small image over to the right. The small image is like, I don't know, it could be centered or offset. That's not really the point." The pairing itself is the move. The band's references came mostly from the old deck — Buck's raw line is "I think the deck can be approved," which is ambiguous dictation ("approved" vs "improved"; flagged, not resolved) — with "the Ultimate Luxury" as the main one. The same move surfaced independently in band 1 (the small offset image with micro text, maybe cycling) and band 2's variant rows — this band is its home (cross-ties recorded in those docs).
 
 ## What Buck likes
 
@@ -13,8 +13,8 @@ An image with a second, much smaller image set off beside it — "an image and t
 
 ## Control for (locked)
 
-- **Imagery (structure):** one large image + one small image, deliberately offset from each other — the size gap between them is the move.
-- **Subject:** the paired-image moment; usable inside heroes, sections, anywhere an image sits.
+- **Imagery (structure):** one large image + one small offset image · the size gap is the move · image pairing, not placement
+- **Subject:** the paired-image moment (where it deploys is open — the feedback doesn't say)
 
 ## Leave open (variation space)
 

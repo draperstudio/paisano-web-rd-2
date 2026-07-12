@@ -13,10 +13,10 @@ The core is workable rather than beloved: "It's just Paisano over the image and 
 
 ## Control for (locked)
 
-- **Grid (alignment):** centered — the title balances on the middle axis over the image block.
-- **Zones:** title over image block, supporting text below — that stack is the pattern.
-- **Hierarchy:** title leads, image supports, text below carries detail.
-- **Brand:** the wordmark question runs through this band — "we have to figure out the script and stuff that's going to affect this." Standard use keeps "Hotel Paisano" together.
+- **Grid (alignment):** centered · title on the middle axis · title over image block
+- **Zones:** vertical stack — title / image block / supporting text below · the stack is the pattern
+- **Hierarchy:** title leads · image supports · text below carries detail
+- **Brand:** "Hotel Paisano" kept together in standard use · wordmark treatment pending the script question ("we have to figure out the script and stuff that's going to affect this")
 
 ## Leave open (variation space)
 
@@ -37,4 +37,4 @@ The core is workable rather than beloved: "It's just Paisano over the image and 
 
 - The logo-script decision affects the whole band ("we have to figure out the script and stuff that's going to affect this but whatever, that's cool").
 - Whether the small-offset-image rows here fold fully into 17 small image offset or stay as this band's variant (AI recorded as cross-tie, review).
-- One transcription ambiguity kept raw in feedback.md: the line about not including "Hotel" ("we also don't really include the 'when we do Hotel Paisano' so I got rid of that") — reads as: the "Hotel" was dropped in these explorations and what remained was acceptable. Confirm against the "we keep Hotel with Paisano" standard.
+- One transcription ambiguity kept raw in feedback.md: "we also don't really include the 'when we do Hotel Paisano' so I got rid of that. It's just Paisano over the image." (Audit note: the hero exploration's title reads "The Paisano" — so the thing Buck got rid of is most likely **"The"**, matching band 1's no-"The" rule; an earlier draft pointed this confirm at "Hotel" instead. Still ambiguous — confirm with Buck.)

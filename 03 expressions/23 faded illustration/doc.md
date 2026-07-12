@@ -13,12 +13,12 @@ An illustration used as a quiet layer in a composition — faded, offset, tucked
 
 ## Control for (locked)
 
-- **Imagery (conduct):** illustration as a faded, subtle underlayer — offset, corner-placed, never presented as a framed feature.
-- **Subject (of the illustration):** leaning map over building — "maybe not the building illustration... we could do a map illustration."
+- **Imagery (conduct):** faded · subtle · offset · corner-placed · a quiet layer (audit fix: "never a framed feature" was an earlier draft's inference — Buck never ruled framing out)
 
 ## Leave open (variation space)
 
 - How faded, how cropped, which corner — the conduct axes.
+- **The illustration's subject — hedged, not locked:** "maybe not the fucking building illustration, but we could do a map illustration." Map is the suggestion to try first; building isn't dead.
 - The text that shares the section — the current treatment is dead ("I don't like the cities miles. It's so bland") and the replacement is open; type needs "way more je ne sais quoi and tasteful about the fucking text type selection and the sizing and kerning and spacing and all that in the case."
 - Which sections take the layer.
 

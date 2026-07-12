@@ -13,8 +13,8 @@ The systematization itself: "There's a bunch of different ways to do it and I wa
 
 ## Control for (locked)
 
-- **Consistency:** whatever wins applies brand-wide. A page never mixes numbering systems.
-- **The decision axes:** Roman vs. normal numerals · parentheses or not · leading zero or not (01 vs 1). These are the defined dimensions of the exploration.
+- **Consistency (descriptive label, not a schema control):** one system, brand-wide · consistent across every surface · a page never mixes numbering systems
+- **The decision axes (descriptive label, not a schema control):** Roman vs. normal numerals · parentheses or not · leading zero or not (01 vs 1) · the defined dimensions of the exploration
 
 ## Leave open (variation space)
 

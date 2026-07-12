@@ -13,9 +13,9 @@ A specific type of framed microtext: fully contained at the bottom of a composit
 
 ## Control for (locked)
 
-- **Dividers:** a drawn rule separating the folio moment from the matter above — the line is structural to the move.
-- **Zones (placement):** the bottom of the section, totally framed — the contained opposite of 10 worked-in text's unframed placement.
-- **Numbering:** the "/05" sub-numbering style is part of the move — feeds 15 numbering system's brand-wide decision.
+- **Dividers:** a drawn line divider above the moment · structural to the move (weight unspecified in the feedback — open)
+- **Zones (placement):** bottom of the section · totally framed · contained (the unframed cousin is 10 worked-in text)
+- **Numbering (descriptive label, not a schema control):** "/05" sub-numbering · slash + number as part of the moment · feeds 15's brand-wide numbering decision
 
 ## Leave open (variation space)
 

@@ -9,13 +9,13 @@ Data cards and tables — rate cards, tabular information — in the manner of t
 
 ## What Buck likes
 
-The references, emphatically: "the references are so good: so much variant, so much nuance, so much je ne sais quoi to the type selection, to the spacing, to the kerning, to the sizing, to the case." And the direction that survived: "The tariff cards I started to like... there's something here with data cards and tables that we can do and I want to get closer to the references."
+The references, emphatically: "the references are so good: so much variant, so much nuance, so much je ne sais quoi to the type selection, to the spacing, to the kerning, to the sizing, to the case." And the direction that survived, with its instruction: "The tariff cards I started to like... we need to develop it some more and get [je ne sais quoi] on it. There's something here with data cards and tables that we can do and I want to get closer to the references."
 
 ## Control for (locked)
 
-- **Subject:** data as cards and tables — rates, tariffs, structured hotel information.
-- **Data (borrowed control — it lives under Slide Deck in the control blocks, no web equivalent exists; naming tension flagged):** the form is cards/tables with typographic nuance doing the work, per the references — not charts, not big-number callouts.
-- **The standard:** the references — every exploration judged by proximity to their type selection, spacing, kerning, sizing, case.
+- **Subject:** data as cards and tables · rates, tariffs, structured hotel information · tariff cards as the surviving direction
+- **Data (borrowed control — lives under Slide Deck in the blocks, no web equivalent; naming tension flagged):** cards/tables carried by typographic nuance (audit fix: an earlier draft excluded charts/big-number callouts — Buck named what he wants, never excluded those)
+- **The standard (descriptive label, not a schema control):** the references · judged on type selection, spacing, kerning, sizing, case · "so much variant, so much nuance"
 
 ## Leave open (variation space)
 

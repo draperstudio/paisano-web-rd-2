@@ -13,9 +13,9 @@ The subtext below a title, set in a script face of some kind. It branched out of
 
 ## Control for (locked)
 
-- **Type (voice-switching):** the subtext slot takes the script — a register change between title and subtext, per the composition-nuance note in ad logic ("which single word gets the script; mid-line register changes").
-- **Subject:** the title + subtext pair; the move lives in the subtext position specifically.
-- **Deployment cadence:** not always — "not all the time but sometimes cycle it in." Sparing by design.
+- **Type (voice-switching):** script face in the subtext slot · register change between title and subtext · type voice-switching (ad logic: "which single word gets the script")
+- **Subject:** the title + subtext pair · the move lives in the subtext position specifically
+- **Deployment cadence (descriptive label, not a schema control):** sometimes, not always · "sometimes cycle it in" · sparing by design
 
 ## Leave open (variation space)
 

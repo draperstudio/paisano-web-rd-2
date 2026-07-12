@@ -13,13 +13,13 @@ The unexpectedness and the looseness: "working in text within, like, I don't kno
 
 ## Control for (locked)
 
-- **Subject (of the move):** small text placed where text isn't expected — inside compositions, against other elements, off the expected slots.
-- **Framing:** un-framed — "it's not super framed up." Distinct from 14 folio rule, which is the fully framed version of a micro moment.
-- **Content register:** the worked-in bits carry real brand facts (EST 1930, Trost & Trost) — alt but not random.
+- **Subject (of the move):** small text where text isn't expected · off the expected slots · worked in against other elements · "a little bit of alt"
+- **Framing (descriptive label, not a schema control):** un-framed · "not super framed up" · loose placement (the framed version is 14 folio rule)
 
 ## Leave open (variation space)
 
-- Everything about deployment: which compositions, how often, what the text says (facts source from 06 knowledge at production).
+- Everything about deployment: which compositions, how often.
+- What the text says — the exploration bits happened to be EST 1930 / Trost & Trost; nothing about the content register is locked (audit fix: an earlier draft locked "real facts, never random" — that's band 11's rule, not this band's feedback).
 - Size, face, case — brand type question, open.
 
 ## Negative

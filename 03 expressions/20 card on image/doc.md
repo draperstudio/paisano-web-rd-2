@@ -5,7 +5,7 @@
 
 ## What it is
 
-A card containing an image on one side and text on the other, placed over a full background image. Round-one exploration with no reference behind it. The structure is liked; nearly every execution detail in the current exploration is off.
+A card containing an image on one side and text on the other, placed over a full background image. Round-one exploration with no reference behind it. The structure is liked; nearly every execution detail in the current exploration is off — and the band ends on a hedge ("Maybe I dunno"), so the whole read is a lean, not a verdict.
 
 ## What Buck likes
 
@@ -13,8 +13,8 @@ A card containing an image on one side and text on the other, placed over a full
 
 ## Control for (locked)
 
-- **Imagery (containment):** background image as ground + a framed card floating on it — the two-layer structure is the expression.
-- **Zones (inside the card):** image one side, text the other — either handedness.
+- **Imagery (containment):** background image as ground · framed card floating on it · two-layer structure · card-on-image
+- **Zones (inside the card):** image one side, text the other · image-left/text-right or vice versa · either handedness
 
 ## Leave open (variation space)
 

@@ -13,8 +13,7 @@ The space itself — nav bars as a place where taste shows. No single variant is
 
 ## Control for (locked)
 
-- **Subject:** the navigation bar.
-- **Navigation (control):** this expression IS the Navigation control worked as its own surface — where the menu lives, what form it takes, how present it is.
+- **Subject:** the navigation bar — and that's the only lock. (Audit fix: an earlier draft listed the Navigation control's axes here; those are exactly what's open. Feedback locks nothing beyond the subject.)
 
 ## Leave open (variation space)
 
