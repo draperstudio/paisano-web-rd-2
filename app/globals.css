@@ -70,6 +70,13 @@ body {
   animation: preloader-out 600ms ease both;
 }
 
+/* Frozen capture mode — composition fully composed, no animation at all */
+.preloader-frozen .preloader-word {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
 /* Wavy decorative rule — traced from 16's stacked-typographic-menu ref */
 .rule-wave {
   height: 6px;

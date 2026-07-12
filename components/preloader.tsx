@@ -9,25 +9,29 @@ type PreloaderProps = {
   groundClass: string
   /** Small secondary line, sans, tiny — like the ref's "OUTUBRO 2025" */
   kicker?: string
-  onDone: () => void
+  /** Frozen: no timers, no exit, no entry animation — holds the full
+      composition indefinitely (for capture / Figma import) */
+  frozen?: boolean
+  onDone?: () => void
 }
 
-export function Preloader({ lines, groundClass, kicker, onDone }: PreloaderProps) {
+export function Preloader({ lines, groundClass, kicker, frozen = false, onDone }: PreloaderProps) {
   const [exiting, setExiting] = useState(false)
 
   useEffect(() => {
+    if (frozen) return
     const hold = setTimeout(() => setExiting(true), 2400)
-    const done = setTimeout(() => onDone(), 3000)
+    const done = setTimeout(() => onDone?.(), 3000)
     return () => {
       clearTimeout(hold)
       clearTimeout(done)
     }
-  }, [onDone])
+  }, [onDone, frozen])
 
   return (
     <div
       aria-hidden="true"
-      className={`fixed inset-0 z-50 overflow-hidden ${groundClass} ${exiting ? "preloader-exit" : ""}`}
+      className={`fixed inset-0 z-50 overflow-hidden ${groundClass} ${exiting ? "preloader-exit" : ""} ${frozen ? "preloader-frozen" : ""}`}
     >
       <div className="relative flex h-full w-full flex-col justify-center">
         {lines.map((line, i) => (

@@ -14,6 +14,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { Preloader } from "./preloader"
 import { ROOM_CLASSES, MATCHER_TRIPS, LEDGER, MEDIA } from "@/lib/data"
+import { PRELOADER_TWO } from "@/lib/preloader-configs"
 
 function RedrawnMark({ className = "" }: { className?: string }) {
   return (
@@ -23,28 +24,12 @@ function RedrawnMark({ className = "" }: { className?: string }) {
   )
 }
 
-export function WorldTwo() {
-  const [loaded, setLoaded] = useState(false)
+export function WorldTwo({ skipPreloader = false }: { skipPreloader?: boolean }) {
+  const [loaded, setLoaded] = useState(skipPreloader)
 
   return (
     <div className="bg-cream text-ink">
-      {!loaded && (
-        <Preloader
-          groundClass="bg-maroon text-cream"
-          kicker="Marfa, Texas — Est. 1930"
-          lines={[
-            {
-              text: "Hotel",
-              className: "font-script-b text-[36vw] -ml-[8vw] -mt-[6vw] -mb-[10vw]",
-            },
-            {
-              text: "Paisano",
-              className: "font-script-b text-[36vw] ml-[12vw] -mb-[8vw]",
-            },
-          ]}
-          onDone={() => setLoaded(true)}
-        />
-      )}
+      {!loaded && <Preloader {...PRELOADER_TWO} onDone={() => setLoaded(true)} />}
 
       <header className="flex items-center justify-between border-b border-ink/15 px-6 py-4 md:px-12">
         <RedrawnMark className="text-3xl text-maroon md:text-4xl" />

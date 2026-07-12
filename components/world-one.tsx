@@ -14,29 +14,14 @@ import Image from "next/image"
 import { Preloader } from "./preloader"
 import { CurrentMark } from "./current-mark"
 import { ROOM_CLASSES, MATCHER_TRIPS, LEDGER, MEDIA } from "@/lib/data"
+import { PRELOADER_ONE } from "@/lib/preloader-configs"
 
-export function WorldOne() {
-  const [loaded, setLoaded] = useState(false)
+export function WorldOne({ skipPreloader = false }: { skipPreloader?: boolean }) {
+  const [loaded, setLoaded] = useState(skipPreloader)
 
   return (
     <div className="bg-cream text-ink">
-      {!loaded && (
-        <Preloader
-          groundClass="bg-cream text-maroon"
-          kicker="Marfa, Texas — Est. 1930"
-          lines={[
-            {
-              text: "Hotel",
-              className: "font-script-a1 text-[38vw] -ml-[6vw] -mt-[10vw] -mb-[14vw]",
-            },
-            {
-              text: "Paisano",
-              className: "font-script-a1 text-[38vw] ml-[16vw] -mb-[12vw]",
-            },
-          ]}
-          onDone={() => setLoaded(true)}
-        />
-      )}
+      {!loaded && <Preloader {...PRELOADER_ONE} onDone={() => setLoaded(true)} />}
 
       <header className="flex items-center justify-between border-b border-ink/15 px-6 py-5 md:px-12">
         <CurrentMark className="h-6 md:h-7" />

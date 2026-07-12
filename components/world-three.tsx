@@ -14,27 +14,16 @@ import Image from "next/image"
 import { Preloader } from "./preloader"
 import { CurrentMark } from "./current-mark"
 import { ROOM_CLASSES, MATCHER_TRIPS, LEDGER, MEDIA } from "@/lib/data"
+import { PRELOADER_THREE } from "@/lib/preloader-configs"
 
-export function WorldThree() {
-  const [loaded, setLoaded] = useState(false)
+export function WorldThree({ skipPreloader = false }: { skipPreloader?: boolean }) {
+  const [loaded, setLoaded] = useState(skipPreloader)
   const [activeRoom, setActiveRoom] = useState(0)
   const room = ROOM_CLASSES[activeRoom]
 
   return (
     <div className="bg-cream text-ink">
-      {!loaded && (
-        <Preloader
-          groundClass="bg-wine text-cream"
-          kicker="Marfa, Texas — Est. 1930"
-          lines={[
-            {
-              text: "Paisano",
-              className: "font-script-a2 text-[40vw] ml-[8vw] -my-[8vw]",
-            },
-          ]}
-          onDone={() => setLoaded(true)}
-        />
-      )}
+      {!loaded && <Preloader {...PRELOADER_THREE} onDone={() => setLoaded(true)} />}
 
       <header className="flex items-center justify-between border-b border-ink/15 px-6 py-5 md:px-12">
         <CurrentMark className="h-6 md:h-7" />
