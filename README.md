@@ -8,7 +8,7 @@
 4. Build the brief per the L-steps in `02 logic/`: L2 outline → L3 visual direction (this is where you pull expression docs + media docs from `04 media/`) → L4 copy. Results accumulate in `08 briefs/[concept]/`.
 5. L5 compiles the brief into 2–3 build prompts. Run them in Paper, v0, or Figma Make. Roughly 3 variations per concept.
 6. Capture at the moment of making: screenshot/export + the small markdown per `09 output/_contract.md` (tool, prompt, expressions in play, honest commentary). Copy the capture into each source expression's `explorations/`. Feedback left in your head is gone.
-7. Feed the expressions after each batch: new idea → new folder. Developed → advance the doc version. Dead → write that it died and why.
+7. When an expression's variation set completes, run the round — `02 logic/tools/production log round.md`: tried/worked/failed, preserve, avoid, and the fault line (doc problem → fix the doc now; prompt problem → fix the compiled prompt; execution problem → fix the build; open-axis dead end → negative candidate, Buck kills). Act on it before the next expression. Then feed the expressions: new idea → new folder. Developed → advance the doc version. Dead → write that it died and why.
 8. `01 settled/` is constraints, never considerations. Don't re-open colors. The neon sign is not changing. The logo-script question stays open — flag it, don't decide it.
 9. Facts come from `06 knowledge/` only. Nothing invented, nothing planned framed as already real.
 10. Assets not made yet are in `05 graphics/to-make.md` — the texture goes first, it blocks judging 01 and 07.

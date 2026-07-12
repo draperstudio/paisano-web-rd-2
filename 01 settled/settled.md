@@ -16,6 +16,12 @@ Near-locked. Values pulled programmatically from the round-one exploration frame
 
 The cream family drifts across four near-identical values in the explorations — one value per role should be picked when this locks.
 
+## Imagery — current state vs. renders
+
+Settled 7.12.26 (Buck, live direction): **anything showing the property as it is now — rooms, courtyard, lobby, facade, any current state — uses current-property photography, never the renders.** Current is the standard state; we show the actual property. The renders (`render-bedroom`, `render-bathroom`, `render-courtyard`, `render-exterior`) appear **only** where the piece is explicitly about the rebuild / next steps / the future. This is the imagery instance of the hard-truth rule — nothing planned framed as already real.
+
+For current rooms specifically: `04 media/current-rooms-improved/` holds doctored-but-still-accurate-to-current photos of the rooms (first outputs landed 7.12) — the preferred current-room source where one exists. Doctored means improved photography, not imagined renovation; what's shown exists at the property today.
+
 ## Type
 
 **Not landed — explicitly.** The board pass expectation was that type might land as 2–3 locked directions, but Buck's band commentary says the opposite throughout: "there's a lot of fine nuanced je ne sais quoi that needs to be figured out as far as what the typefaces we use are and the kerning and the sizing" (band 07), "we need to try some different typefaces" (band 09), "type selection, the case, the kerning, the sizing is totally fucking off and needs to be fucking dialed" (band 20). Typeface selection, kerning, sizing, and casing stay open work across nearly every expression. Nothing goes here until directions are actually picked and fonts pulled.

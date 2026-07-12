@@ -1,5 +1,7 @@
 # render-courtyard.png
 
+**Usage rule (settled 7.12 — `01 settled/settled.md` → Imagery):** future/rebuild/next-steps contexts only, labeled as such — never as the current state of the property. The current courtyard is shown with current photography (`courtyard-fountain.jpg`).
+
 ## Description
 
 This wide shot rendering showcases a new post-renovation courtyard designed in a Mediterranean architectural style, featuring white stucco walls, terracotta roof tiles, and lush climbing ivy. The space is organized with elegant outdoor seating, including wrought-iron tables and plush lounge chairs, centered around large potted olive trees and a stone fountain. A neon sign for 'La Meseta' adds a touch of modern branding to the traditional setting, while string lights and tall cypress trees create a sophisticated evening ambiance. The composition emphasizes a luxurious and inviting social environment, highlighting the property's high-end aesthetic and attention to detail.

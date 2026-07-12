@@ -15,6 +15,8 @@ Not at the end of the session. The moment a variation exists, before making the 
 
 3. **Copy back** — the artifact + capture.md get copied into each source expression's `03 expressions/[name]/explorations/`. The expression folder is where the next round reads; this folder is the run record. If the duplication bloats at volume, `explorations/` becomes a pointer back to the 09 record instead of a second copy.
 
+After an expression's variation set completes, the production log round runs on the accumulated captures — `02 logic/tools/production log round.md`. The capture records; the round reviews.
+
 ## Why this exists
 
 Round one produced volume across three tools and the judgment lived in Jack's head and scattered chats. The ideas-and-thinking that come up while producing — "I like this script because it clashes with X and that's good tension" — are what concepts get pulled out of later. Captured in the moment they compound; captured at the end of the day they're gone.
