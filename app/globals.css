@@ -12,6 +12,7 @@
   --color-stone: #6f6759;
 
   --font-sans: var(--font-archivo);
+  --font-mono: var(--font-plex-mono);
   --font-serif: var(--font-serif-one);
   --font-serif-two: var(--font-serif-two);
   --font-serif-three: var(--font-serif-three);

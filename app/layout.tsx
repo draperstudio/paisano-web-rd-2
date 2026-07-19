@@ -8,6 +8,7 @@ import {
   Pinyon_Script,
   Herr_Von_Muellerhoff,
   Great_Vibes,
+  IBM_Plex_Mono,
 } from "next/font/google"
 import "./globals.css"
 
@@ -62,6 +63,12 @@ const greatVibes = Great_Vibes({
   weight: "400",
 })
 
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
+  weight: ["400", "500"],
+})
+
 export const metadata: Metadata = {
   title: "Hotel Paisano — Round Two Variations",
   description:
@@ -76,7 +83,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${greatVibes.variable}`}
+      className={`bg-background ${archivo.variable} ${libreCaslon.variable} ${cormorant.variable} ${ebGaramond.variable} ${italiana.variable} ${pinyon.variable} ${herrVon.variable} ${greatVibes.variable} ${plexMono.variable}`}
     >
       <body className="font-sans">{children}</body>
     </html>
